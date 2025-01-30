@@ -1,0 +1,312 @@
+{
+  "categorias": [
+    {
+      "divisao": "Agricultura e Florestas",
+      "grupos": [
+        {
+          "grupo": "Produtos da Agricultura",
+          "atividades": [
+            {
+              "nome": "Atividades Gerais",
+              "descricao": "ATIVIDADES SUJEITAS A AUTORIZAÇÃO POR PROCEDIMENTO ESPECIAL DE LICENCIAMENTO, REGISTRO NO CEFIR E REQUERIMENTO, QUANDO FOR O CASO, DAS DEMAIS AUTORIZAÇÕES COMPETENTES, TAIS COMO: ASV E OUTORGA",
+              "potencial_poluidor": "P",
+              "subcategorias": []
+            }
+          ]
+        },
+        {
+          "grupo": "Criação de Animais",
+          "atividades": [
+            {
+              "nome": "Pecuária",
+              "descricao": "ATIVIDADE SUJEITA A AUTORIZAÇÃO POR PROCEDIMENTO ESPECIAL DE LICENCIAMENTO, REGISTRO NO CEFIR E REQUERIMENTO, QUANDO FOR O CASO, DAS DEMAIS AUTORIZAÇÕES COMPETENTES, TAIS COMO: ASV E OUTORGA",
+              "potencial_poluidor": "P",
+              "subcategorias": []
+            },
+            {
+              "nome": "Criações Confinadas e Semi-confinadas",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Bovinos, Bubalinos, Muares e Equinos",
+                  "unidade_medida": "Capacidade Instalada (Número de Animais)",
+                  "porte": {
+                    "pequeno": 500,
+                    "médio": 2000,
+                    "grande": 2000
+                  },
+                  "potencial_poluidor": "A"
+                },
+                {
+                  "nome": "Aves e Pequenos Mamíferos",
+                  "unidade_medida": "Capacidade Instalada (Número de Animais)",
+                  "porte": {
+                    "pequeno": 60000,
+                    "médio": 400000,
+                    "grande": 400000
+                  },
+                  "potencial_poluidor": "M"
+                },
+                {
+                  "nome": "Caprinos e Ovinos",
+                  "unidade_medida": "Capacidade Instalada (Número de Animais)",
+                  "porte": {
+                    "pequeno": 1000,
+                    "médio": 5000,
+                    "grande": 5001
+                  },
+                  "potencial_poluidor": "M"
+                },
+                {
+                  "nome": "Suínos",
+                  "unidade_medida": "Capacidade Instalada (Número de Animais)",
+                  "porte": {
+                    "pequeno": 1000,
+                    "médio": 5000,
+                    "grande": 5001
+                  },
+                  "potencial_poluidor": "A"
+                },
+                {
+                  "nome": "Creche de Suínos",
+                  "unidade_medida": "Capacidade Instalada (Número de Animais)",
+                  "porte": {
+                    "pequeno": 8000,
+                    "médio": 30000,
+                    "grande": 3001
+                  },
+                  "potencial_poluidor": "M"
+                }
+              ]
+            },
+            {
+              "nome": "Aquicultura",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Piscicultura Intensiva em Viveiros Escavados ou similar",
+                  "unidade_medida": "Área (ha)",
+                  "porte": {
+                    "pequeno": 10,
+                    "médio": 50,
+                    "grande": 51
+                  },
+                  "potencial_poluidor": "M"
+                },
+                {
+                  "nome": "Piscicultura Continental em Tanques-Rede, Raceway ou Similar",
+                  "unidade_medida": "Volume (m³)",
+                  "porte": {
+                    "pequeno": 5000,
+                    "grande": 5001
+                  },
+                  "potencial_poluidor": "P"
+                },
+                {
+                  "nome": "Piscicultura Marinha em Tanques-Rede, Raceway ou Similar",
+                  "unidade_medida": "Volume (m³)",
+                  "porte": {
+                    "pequeno": 5000,
+                    "medio": 10000,
+                    "grande": 10001
+                  },
+                  "potencial_poluidor": "P"
+                }
+              ]
+            },
+            {
+              "nome": "Carcinicultura",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Carcinicultura em Viveiros Escavados em Apicuns e Salgados",
+                  "unidade_medida": "Área (ha)",
+                  "porte": {
+                    "pequeno": 10,
+                    "médio": 50,
+                    "grande": 51
+                  },
+                  "potencial_poluidor": "M"
+                },
+                {
+                  "nome": "Carcinicultura em Viveiros Escavados",
+                  "unidade_medida": "Área (ha)",
+                  "porte": {
+                    "pequeno": 10,
+                    "medio": 50,
+                    "grande": 51
+                  },
+                  "potencial_poluidor": "M"
+                },
+                {
+                  "nome": "Ranicultura",
+                  "unidade_medida": "Área (ha)",
+                  "porte": {
+                    "pequeno": 0.04,
+                    "medio": 0.12,
+                    "grande": 0.13
+                  },
+                  "potencial_poluidor": "P"
+                },
+                {
+                  "nome": "Algicultura",
+                  "unidade_medida": "Área (ha)",
+                  "porte": {
+                    "pequeno": 10,
+                    "medio": 40,
+                    "grande": 41
+                  },
+                  "potencial_poluidor": "P"
+                },
+                {
+                  "nome": "Malacocultura",
+                  "unidade_medida": "Área (ha)",
+                  "porte": {
+                    "pequeno": 5,
+                    "medio": 30,
+                    "grande": 31
+                  },
+                  "potencial_poluidor": "P"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "grupo": "Silvicultura",
+          "atividades": [
+            {
+              "nome": "Silvicultura Geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Silvicultura (vinculada a PSS)",
+                  "unidade_medida": "Área (ha)",
+                  "porte": {
+                    "pequeno": 500,
+                    "médio": 1500,
+                    "grande": 1501
+                  },
+                  "potencial_poluidor": "M"
+                }
+              ]
+            },
+            {
+              "nome": "Produção de carvão vegetal",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Madeira de Floresta Plantada",
+                  "unidade_medida": "MDC/Mês",
+                  "porte": {
+                    "pequeno": 10000,
+                    "médio": 35000,
+                    "grande": 35001
+                  },
+                  "potencial_poluidor": "A"
+                },
+                {
+                  "nome": "Madeira de floresta nativa advinda de supressão ou manejo",
+                  "unidade_medida": "MDC/Mês",
+                  "porte": {
+                    "pequeno": 10000,
+                    "médio": 35000,
+                    "grande": 35001
+                  },
+                  "potencial_poluidor": "A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "grupo": "Supressão de Vegetação",
+          "atividades": [
+            {
+              "nome": "Supressão de Vegetação Geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Supressão de Vegetação no Bioma Mata Atlântica",
+                  "unidade_medida": "Área suprimida (ha)",
+                  "porte": {
+                    "pequeno": 100,
+                    "médio": 500,
+                    "grande": 5001
+                  },
+                  "potencial_poluidor": "A"
+                },
+                {
+                  "nome": "Supressão de Vegetação no Bioma Caatinga",
+                  "unidade_medida": "Área suprimida (ha)",
+                  "porte": {
+                    "pequeno": 3000,
+                    "médio": 10000,
+                    "grande": 10001
+                  },
+                  "potencial_poluidor": "A"
+                },
+                {
+                  "nome": "Supressão de Vegetação no Bioma Cerrado",
+                  "unidade_medida": "Área suprimida (ha)",
+                  "porte": {
+                    "pequeno": 3000,
+                    "médio": 10000,
+                    "grande": 10001
+                  },
+                  "potencial_poluidor": "A"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "divisao": "Mineração",
+      "grupos": [
+        {
+          "grupo": "Minerais Metálicos e Não Metálicos",
+          "atividades": [
+            {
+              "nome": "Minerais Metálicos",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Ferro",
+                  "unidade_medida": "Produção Bruta de Minério (t/Ano)",
+                  "porte": {
+                    "pequeno": 300000,
+                    "médio": 1500000,
+                    "grande": 1500000
+                  },
+                  "potencial_poluidor": "A"
+                },
+                {
+                  "nome": "Manganês",
+                  "unidade_medida": "Produção Bruta de Minério (t/Ano)",
+                  "porte": {
+                    "pequeno": 100000,
+                    "médio": 500000,
+                    "grande": 500001
+                  },
+                  "potencial_poluidor": "A"
+                },
+                {
+                  "nome": "Alumínio, Antimônio, Cádmio, Chumbo, Cobre e semelhantes",
+                  "unidade_medida": "Produção Bruta de Minério (t/Ano)",
+                  "porte": {
+                    "pequeno": 300000,
+                    "médio": 1500000,
+                    "grande": 1500000
+                  },
+                  "potencial_poluidor": "A"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "DIVISÃO A: AGRICULTURA E FLORESTAS": {
+    "Grupo A1: Produtos da Agricultura": {
+      "Atividades": "ATIVIDADES SUJEITAS A AUTORIZAÇÃO POR PROCEDIMENTO ESPECIAL DE LICENCIAMENTO, REGISTRO NO CEFIR E REQUERIMENTO, QUANDO FOR O CASO, DAS DEMAIS AUTORIZAÇÕES COMPETENTES, TAIS COMO: ASV E OUTORGA",
+      "POTENCIAL POLUIDOR": "P"
+    },
+    "Grupo A2: Criação de Animais": {
+      "Pecuária": {
+        "Atividades": "Pecuária: ATIVIDADE SUJEITA A AUTORIZAÇÃO POR PROCEDIMENTO ESPECIAL DE LICENCIAMENTO, REGISTRO NO CEFIR E REQUERIMENTO, QUANDO FOR O CASO, DAS DEMAIS AUTORIZAÇÕES COMPETENTES, TAIS COMO: ASV E OUTORGA",
+        "POTENCIAL POLUIDOR": "P"
+      },
+      "Criações Confinadas e Semi-confinadas": {
+        "Subcategorias": {
+          "Bovinos, Bubalinos, Muares e Equinos": {
+            "unidade_medida": "Capacidade Instalada (Número de Animais)",
+            "PORTE": {
+              "Pequeno": ">= 50 < 500",
+              "Médio": ">= 500 < 2.000",
+              "Grande": ">= 2.000"
+            },
+            "POTENCIAL POLUIDOR": "A"
+          },
+          "Aves e Pequenos Mamíferos": {
+            "unidade_medida": "Capacidade Instalada (Número de Animais)",
+            "PORTE": {
+              "Pequeno": ">= 12.000 < 60.000",
+              "Médio": ">= 60.000 < 400.000",
+              "Grande": ">= 400.000"
+            },
+            "POTENCIAL POLUIDOR": "M"
+          }
+        }
+      },
+      "Aquicultura": {
+        "Subcategorias": {
+          "Piscicultura Intensiva em Viveiros Escavados ou similar": {
+            "unidade_medida": "Área (ha)",
+            "PORTE": {
+              "Pequeno": ">= 1 < 10",
+              "Médio": ">= 10 < 50",
+              "Grande": ">= 50"
+            },
+            "POTENCIAL POLUIDOR": "M"
+          }
+        }
+      }
+    }
+  },
+  "DIVISAO B: MINERAÇÃO": {
+    "Grupo B1: Minerais Metálicos e Não Metálicos": {
+      "B1.1 Minerais Metálicos": {
+        "Ferro": {
+          "unidade_medida": "Produção Bruta de Minério (t/Ano)",
+          "porte": {
+            "Pequeno": "< 300.000",
+            "Medio": ">= 300.000 < 1.500.000",
+            "Grande": ">= 1.500.000"
+          },
+          "potencial_poluidor": "A"
+        }
+      }
+    }
+  }
+}

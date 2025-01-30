@@ -1,0 +1,270 @@
+{
+  "DIVISÃO A: AGRICULTURA E FLORESTAS": {
+    "Grupo A1: Produtos da Agricultura": {
+      "Atividades": "ATIVIDADES SUJEITAS A AUTORIZAÇÃO POR PROCEDIMENTO ESPECIAL DE LICENCIAMENTO, REGISTRO NO CEFIR E REQUERIMENTO, QUANDO FOR O CASO, DAS DEMAIS AUTORIZAÇÕES COMPETENTES, TAIS COMO: ASV E OUTORGA",
+      "POTENCIAL POLUIDOR": "P"
+    },
+    "Grupo A2: Criação de Animais": {
+      "A2.1": {
+        "Atividades": "Pecuária: ATIVIDADE SUJEITA A AUTORIZAÇÃO POR PROCEDIMENTO ESPECIAL DE LICENCIAMENTO, REGISTRO NO CEFIR E REQUERIMENTO, QUANDO FOR O CASO, DAS DEMAIS AUTORIZAÇÕES COMPETENTES, TAIS COMO: ASV E OUTORGA",
+        "POTENCIAL POLUIDOR": "P"
+      },
+      "A2.2": {
+        "TIPOLOGIA": "Criações Confinadas e Semi-confinadas",
+        "Subcategorias": {
+          "A2.2.1": {
+            "TIPOLOGIA": "Bovinos, Bubalinos, Muares e Equinos",
+            "UNIDADE DE MEDIDA": "Capacidade Instalada (Número de Animais)",
+            "PORTE": {
+              "Pequeno": ">= 50 < 500",
+              "Médio": ">= 500 < 2.000",
+              "Grande": ">= 2.000"
+            },
+            "POTENCIAL POLUIDOR": "A"
+          },
+          "A2.2.2": {
+            "TIPOLOGIA": "Aves e Pequenos Mamíferos",
+            "UNIDADE DE MEDIDA": "Capacidade Instalada (Número de Animais)",
+            "PORTE": {
+              "Pequeno": ">= 12.000 < 60.000",
+              "Médio": ">= 60.000 < 400.000",
+              "Grande": ">= 400.000"
+            },
+            "POTENCIAL POLUIDOR": "M"
+          },
+          "A2.2.3": {
+            "TIPOLOGIA": "Caprinos e Ovinos",
+            "UNIDADE DE MEDIDA": "Capacidade Instalada (Número de Animais)",
+            "PORTE": {
+              "Pequeno": ">= 500 < 1.000",
+              "Médio": ">= 1.000 < 5.000",
+              "Grande": ">= 5.000"
+            },
+            "POTENCIAL POLUIDOR": "M"
+          },
+          "A2.2.4": {
+            "TIPOLOGIA": "Suínos",
+            "UNIDADE DE MEDIDA": "Capacidade Instalada (Número de Animais)",
+            "PORTE": {
+              "Pequeno": ">= 300 < 1.000",
+              "Médio": ">= 1.000 < 5.000",
+              "Grande": ">= 5.000"
+            },
+            "POTENCIAL POLUIDOR": "A"
+          },
+          "A2.2.5": {
+            "TIPOLOGIA": "Creche de Suínos",
+            "UNIDADE DE MEDIDA": "Capacidade Instalada (Número de Animais)",
+            "PORTE": {
+              "Pequeno": ">= 1.000 < 8.000",
+              "Médio": ">= 8.000 < 30.000",
+              "Grande": ">= 30.000"
+            },
+            "POTENCIAL POLUIDOR": "M"
+          }
+        }
+      },
+      "A2.3": {
+        "TIPOLOGIA": "Aquicultura",
+        "Subcategorias": {
+          "A2.3.1": {
+            "TIPOLOGIA": "Piscicultura Intensiva em Viveiros Escavados ou similar",
+            "UNIDADE DE MEDIDA": "Área (ha)",
+            "PORTE": {
+              "Pequeno": ">= 1 < 10",
+              "Médio": ">= 10 < 50",
+              "Grande": ">= 50"
+            },
+            "POTENCIAL POLUIDOR": "M"
+          },
+          "A2.3.1.2": {
+            "TIPOLOGIA": "Piscicultura Continental em Tanques-Rede, Raceway ou Similar",
+            "UNIDADE DE MEDIDA": "Volume (m³)",
+            "PORTE": {
+              "Pequeno": "1.000 < 5.000",
+              "Grande": ">= 5.000"
+            },
+            "POTENCIAL POLUIDOR": "P"
+          }
+        }
+      }
+    }
+  },
+  "DIVISAO B: MINERAÇÃO": {
+    "Grupo B1: Minerais Metálicos e Não Metálicos": {
+      "B1.1 Minerais Metalicos": {
+        "B1.1.1": {
+          "tipo": "Ferro",
+          "producao": "Produção Bruta de Minério (t/Ano)",
+          "porte": {
+            "Pequeno": "< 300.000",
+            "Medio": ">= 300.000 < 1.500.000",
+            "Grande": ">= 1.500.000"
+          },
+          "potencial_poluidor": "A"
+        },
+        "B1.1.2": {
+          "tipo": "Manganes",
+          "producao": "Produção Bruta de Minério (t/Ano)",
+          "porte": {
+            "Pequeno": "< 100.000",
+            "Medio": ">= 100.000 < 500.000",
+            "Grande": ">= 500.000"
+          },
+          "potencial_poluidor": "A"
+        },
+        "B1.1.3": {
+          "tipo": "Outros metais",
+          "producao": "Produção Bruta de Minério (t/Ano)",
+          "porte": {
+            "Pequeno": "< 50.000",
+            "Medio": ">= 50.000 < 500.000",
+            "Grande": ">= 500.000"
+          },
+          "potencial_poluidor": "A"
+        }
+      },
+      "B1.2 Minerais Nao Metalicos": [
+        {
+          "tipo": "Criolita e similares",
+          "producao": "Produção Bruta de Minério (t/Ano)",
+          "porte": {
+            "Pequeno": "< 100.000",
+            "Medio": ">= 100.000 < 800.000",
+            "Grande": ">= 800.000"
+          },
+          "potencial_poluidor": "A"
+        }
+      ]
+    },
+    "Grupo B2: Gemas ou Pedras Preciosas e Semi-Preciosas": {
+      "Gemas": [
+        {
+          "tipo": "Pedras preciosas e semi-preciosas",
+          "producao": "Produção Bruta de Minério (t/Ano)",
+          "porte": {
+            "Pequeno": "< 5.000",
+            "Medio": ">= 5.000 < 50.000",
+            "Grande": ">= 50.000"
+          },
+          "potencial_poluidor": "M"
+        },
+        {
+          "tipo": "Ametista e similares",
+          "producao": "Produção Bruta de Minério (t/Ano)",
+          "porte": {
+            "Pequeno": "< 10.000",
+            "Medio": ">= 10.000 < 50.000",
+            "Grande": ">= 50.000"
+          },
+          "potencial_poluidor": "A"
+        }
+      ]
+    },
+    "Grupo_B3": {
+      "Minerais Utilizados em Construção": [
+        {
+          "tipo": "Areias e similares",
+          "producao": "Produção Bruta de Minério (t/Ano)",
+          "porte": {
+            "Pequeno": "< 150.000",
+            "Medio": ">= 150.000 < 500.000",
+            "Grande": ">= 500.000"
+          },
+          "potencial poluidor": "M"
+        },
+        {
+          "tipo": "Areias em Recursos Hídricos",
+          "producao": "Produção Bruta de Minério (t/Ano)",
+          "porte": {
+            "Pequeno": "< 75.000",
+            "Medio": ">= 75.000 < 150.000",
+            "Grande": ">= 150.000"
+          },
+          "potencial poluidor": "M"
+        },
+        {
+          "tipo": "Caulim",
+          "producao": "Produção Bruta de Minério (t/Ano)",
+          "porte": {
+            "Pequeno": "< 100.000",
+            "Medio": ">= 100.000 < 500.000",
+            "Grande": ">= 500.000"
+          },
+          "potencial poluidor": "A"
+        },
+        {
+          "tipo": "Basalto, Calcários, Gnaisses, Granitos, Granulitos, Metarenitos e similares",
+          "producao": "Produção Bruta de Minério (t/Ano)",
+          "porte": {
+            "Pequeno": "< 100.000",
+            "Medio": ">= 100.000 < 500.000",
+            "Grande": ">= 500.000"
+          },
+          "potencial_poluidor": "M"
+        },
+        {
+          "tipo": "Ardósia, Dioritos, Granitos, Mármores, Quartzos, Sienitos, Dentre Outras Utilizadas Para Revestimento",
+          "producao": "Produção Bruta de Minério (t/Ano)",
+          "porte": {
+            "Pequeno": "< 50.000",
+            "Medio": ">= 50.000 < 150.000",
+            "Grande": ">= 150.000"
+          },
+          "potencial_poluidor": "A"
+        }
+      ]
+    },
+    "Grupo B4": {
+      "Minerais Industria": [
+        {
+          "tipo": "Argilas, Caulinita, Diatomita, Ilita, Caulim Dentre Outros",
+          "producao": "Produção Bruta de Minério (t/Ano)",
+          "porte": {
+            "Pequeno": "< 60.000",
+            "Medio": ">= 60.000 < 150.000",
+            "Grande": ">= 150.000"
+          },
+          "potencial_poluidor": "M"
+        },
+        {
+          "tipo": "Cianita e similares",
+          "producao": "Produção Bruta de Minério (t/Ano)",
+          "porte": {
+            "Pequeno": "= 20.000 < 200.000",
+            "Grande": ">= 200.000"
+          },
+          "potencial_poluidor": "M"
+        }
+      ]
+    },
+    "Grupo B5": {
+      "Combustiveis": [
+        {
+          "tipo": "Combustiveis fosséis",
+          "producao": "Produção Bruta (t/Ano)",
+          "porte": {
+            "Pequeno": "< 50.000",
+            "Medio": ">= 50.000 < 200.000",
+            "Grande": ">= 200.000"
+          },
+          "potencial_poluidor": "A"
+        }
+      ]
+    },
+    "Grupo_B6": {
+      "Petroleo_Gas": [
+        {
+          "tipo": "Extracao de petroleo e gas natural",
+          "producao": "Nº de Poços/Campo",
+          "porte": {
+            "Pequeno": "< 10",
+            "Medio": ">= 10 < 30",
+            "Grande": ">= 30"
+          },
+          "potencial_poluidor": "A"
+        }
+      ]
+    }
+  }
+}
