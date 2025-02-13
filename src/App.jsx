@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./Components/Header";
 import data from "./data/ambiente.json"; // Importando o JSON
 
+// potencial polidor alto, médio e pequeno
 const DynamicSelect = () => {
   const [selectedDivision, setSelectedDivision] = useState("");
   const [selectedGroup, setSelectedGroup] = useState("");
@@ -214,7 +215,7 @@ const DynamicSelect = () => {
           {/* Resultado */}
           {empreendimento && (
             <p>
-              {`Empreendimento de ${empreendimento.porte} porte e potencial poluidor (${empreendimento.potencialPoluidor}).`}
+              {`Empreendimento de ${empreendimento.porte} Porte e ${empreendimento.potencialPoluidor} Potencial Poluidor.`}
             </p>
           )}
 

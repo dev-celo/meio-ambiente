@@ -9,7 +9,7 @@
             {
               "nome": "Atividades Gerais",
               "descricao": "ATIVIDADES SUJEITAS A AUTORIZAÇÃO POR PROCEDIMENTO ESPECIAL DE LICENCIAMENTO, REGISTRO NO CEFIR E REQUERIMENTO, QUANDO FOR O CASO, DAS DEMAIS AUTORIZAÇÕES COMPETENTES, TAIS COMO: ASV E OUTORGA",
-              "potencial_poluidor": "P",
+              "potencial_poluidor": "Pequeno",
               "subcategorias": []
             }
           ]
@@ -20,7 +20,7 @@
             {
               "nome": "Pecuária",
               "descricao": "ATIVIDADE SUJEITA A AUTORIZAÇÃO POR PROCEDIMENTO ESPECIAL DE LICENCIAMENTO, REGISTRO NO CEFIR E REQUERIMENTO, QUANDO FOR O CASO, DAS DEMAIS AUTORIZAÇÕES COMPETENTES, TAIS COMO: ASV E OUTORGA",
-              "potencial_poluidor": "P",
+              "potencial_poluidor": "Pequeno",
               "subcategorias": []
             },
             {
@@ -35,7 +35,7 @@
                     "médio": 2000,
                     "grande": 2000
                   },
-                  "potencial_poluidor": "A"
+                  "potencial_poluidor": "Alto"
                 },
                 {
                   "nome": "Aves e Pequenos Mamíferos",
@@ -45,7 +45,7 @@
                     "médio": 400000,
                     "grande": 400000
                   },
-                  "potencial_poluidor": "M"
+                  "potencial_poluidor": "Médio"
                 },
                 {
                   "nome": "Caprinos e Ovinos",
@@ -55,7 +55,7 @@
                     "médio": 5000,
                     "grande": 5001
                   },
-                  "potencial_poluidor": "M"
+                  "potencial_poluidor": "Médio"
                 },
                 {
                   "nome": "Suínos",
@@ -65,7 +65,7 @@
                     "médio": 5000,
                     "grande": 5001
                   },
-                  "potencial_poluidor": "A"
+                  "potencial_poluidor": "Alto"
                 },
                 {
                   "nome": "Creche de Suínos",
@@ -75,7 +75,7 @@
                     "médio": 30000,
                     "grande": 3001
                   },
-                  "potencial_poluidor": "M"
+                  "potencial_poluidor": "Médio"
                 }
               ]
             },
@@ -91,7 +91,7 @@
                     "médio": 50,
                     "grande": 51
                   },
-                  "potencial_poluidor": "M"
+                  "potencial_poluidor": "Médio"
                 },
                 {
                   "nome": "Piscicultura Continental em Tanques-Rede, Raceway ou Similar",
@@ -100,7 +100,7 @@
                     "pequeno": 5000,
                     "grande": 5001
                   },
-                  "potencial_poluidor": "P"
+                  "potencial_poluidor": "Pequeno"
                 },
                 {
                   "nome": "Piscicultura Marinha em Tanques-Rede, Raceway ou Similar",
@@ -110,7 +110,7 @@
                     "medio": 10000,
                     "grande": 10001
                   },
-                  "potencial_poluidor": "P"
+                  "potencial_poluidor": "Pequeno"
                 }
               ]
             },
@@ -126,7 +126,7 @@
                     "médio": 50,
                     "grande": 51
                   },
-                  "potencial_poluidor": "M"
+                  "potencial_poluidor": "Médio"
                 },
                 {
                   "nome": "Carcinicultura em Viveiros Escavados",
@@ -136,7 +136,7 @@
                     "medio": 50,
                     "grande": 51
                   },
-                  "potencial_poluidor": "M"
+                  "potencial_poluidor": "Médio"
                 },
                 {
                   "nome": "Ranicultura",
@@ -146,7 +146,7 @@
                     "medio": 0.12,
                     "grande": 0.13
                   },
-                  "potencial_poluidor": "P"
+                  "potencial_poluidor": "Pequeno"
                 },
                 {
                   "nome": "Algicultura",
@@ -156,7 +156,7 @@
                     "medio": 40,
                     "grande": 41
                   },
-                  "potencial_poluidor": "P"
+                  "potencial_poluidor": "Pequeno"
                 },
                 {
                   "nome": "Malacocultura",
@@ -166,7 +166,7 @@
                     "medio": 30,
                     "grande": 31
                   },
-                  "potencial_poluidor": "P"
+                  "potencial_poluidor": "Pequeno"
                 }
               ]
             }
@@ -187,7 +187,7 @@
                     "médio": 1500,
                     "grande": 1501
                   },
-                  "potencial_poluidor": "M"
+                  "potencial_poluidor": "Médio"
                 }
               ]
             },
@@ -203,7 +203,7 @@
                     "médio": 35000,
                     "grande": 35001
                   },
-                  "potencial_poluidor": "A"
+                  "potencial_poluidor": "Alto"
                 },
                 {
                   "nome": "Madeira de floresta nativa advinda de supressão ou manejo",
@@ -213,7 +213,7 @@
                     "médio": 35000,
                     "grande": 35001
                   },
-                  "potencial_poluidor": "A"
+                  "potencial_poluidor": "Alto"
                 }
               ]
             }
@@ -234,7 +234,7 @@
                     "médio": 500,
                     "grande": 5001
                   },
-                  "potencial_poluidor": "A"
+                  "potencial_poluidor": "Alto"
                 },
                 {
                   "nome": "Supressão de Vegetação no Bioma Caatinga",
@@ -244,7 +244,7 @@
                     "médio": 10000,
                     "grande": 10001
                   },
-                  "potencial_poluidor": "A"
+                  "potencial_poluidor": "Alto"
                 },
                 {
                   "nome": "Supressão de Vegetação no Bioma Cerrado",
@@ -254,7 +254,7 @@
                     "médio": 10000,
                     "grande": 10001
                   },
-                  "potencial_poluidor": "A"
+                  "potencial_poluidor": "Alto"
                 }
               ]
             }
@@ -280,7 +280,7 @@
                     "médio": 1500000,
                     "grande": 1500000
                   },
-                  "potencial_poluidor": "A"
+                  "potencial_poluidor": "Alto"
                 },
                 {
                   "nome": "Manganês",
@@ -290,7 +290,7 @@
                     "médio": 500000,
                     "grande": 500001
                   },
-                  "potencial_poluidor": "A"
+                  "potencial_poluidor": "Alto"
                 },
                 {
                   "nome": "Alumínio, Antimônio, Cádmio, Chumbo, Cobre e semelhantes",
@@ -300,7 +300,7 @@
                     "médio": 500000,
                     "grande": 500001
                   },
-                  "potencial_poluidor": "A"
+                  "potencial_poluidor": "Alto"
                 }
               ]
             },
@@ -316,7 +316,7 @@
                     "médio": 800000,
                     "grande": 800001
                   },
-                  "potencial_poluidor": "A"
+                  "potencial_poluidor": "Alto"
                 }
               ]
             }
@@ -337,7 +337,7 @@
                     "médio": 50000,
                     "grande": 50001
                   },
-                  "potencial_poluidor": "M"
+                  "potencial_poluidor": "Médio"
                 },
                 {
                   "nome": "Ametista, Diamante, Esmeralda",
@@ -347,7 +347,7 @@
                     "médio": 50000,
                     "grande": 50001
                   },
-                  "potencial_poluidor": "A"
+                  "potencial_poluidor": "Alto"
                 }
               ]
             }
@@ -368,7 +368,7 @@
                     "médio": 500000,
                     "grande": 500001
                   },
-                  "potencial_poluidor": "M"
+                  "potencial_poluidor": "Médio"
                 },
                 {
                   "nome": "Areias em Recursos Hídricos",
@@ -378,7 +378,7 @@
                     "médio": 150000,
                     "grande": 150000
                   },
-                  "potencial_poluidor": "M"
+                  "potencial_poluidor": "Médio"
                 },
                 {
                   "nome": "Caulim",
@@ -388,7 +388,7 @@
                     "médio": 500000,
                     "grande": 500001
                   },
-                  "potencial_poluidor": "A"
+                  "potencial_poluidor": "Alto"
                 },
                 {
                   "nome": "Basalto, Calcários, Gnaisses, Granitos, Granulitos, Metarenitos, Quartzitos (Britamento)",
@@ -398,7 +398,7 @@
                     "médio": 500000,
                     "grande": 500001
                   },
-                  "potencial_poluidor": "M"
+                  "potencial_poluidor": "Médio"
                 },
                 {
                   "nome": "Ardósia, Dioritos, Granitos, Mármores, Quartzos, Sienitos, Dentre Outras Utilizadas Para Revestimento",
@@ -408,7 +408,7 @@
                     "médio": 150000,
                     "grande": 150001
                   },
-                  "potencial_poluidor": "A"
+                  "potencial_poluidor": "Alto"
                 }
               ]
             }
@@ -429,7 +429,7 @@
                     "médio": 150000,
                     "grande": 150001
                   },
-                  "potencial_poluidor": "M"
+                  "potencial_poluidor": "Médio"
                 },
                 {
                   "nome": "Cianita, Feldspato, Leucita, Moscovita, Nefelina, Quartzo e Turmalina, Dentre Outros, Para Manufatura de Vidro/Vitrificação",
@@ -438,7 +438,7 @@
                     "pequeno": 200000,
                     "grande": 200001
                   },
-                  "potencial_poluidor": "M"
+                  "potencial_poluidor": "Médio"
                 },
                 {
                   "nome": "Apatita, Calcário Dolomítico, Calcita, Carnalita, Dolomita, Fosfatos, Minerais de Borato, Potássio, Salgema, Salitre, Silvita e Sódio, Dentre Outros",
@@ -448,7 +448,7 @@
                     "médio": 500000,
                     "grande": 500001
                   },
-                  "potencial_poluidor": "A"
+                  "potencial_poluidor": "Alto"
                 },
                 {
                   "nome": "Andalusita, Anfibólios, Caulinita, Coríndon, Feldspato, Grafita, Moscovita, Pegmatito, Quartzito Serpentinito, Silex e Outros",
@@ -458,7 +458,7 @@
                     "médio": 500000,
                     "grande": 500001
                   },
-                  "potencial_poluidor": "M"
+                  "potencial_poluidor": "Médio"
                 },
                 {
                   "nome": "Anidrita, Barita, Bentonita, Calcário Conchífero, Calcário Calcitico, Calcita, Diatomita, Gipsita, Magnesita e Talco",
@@ -468,7 +468,7 @@
                     "médio": 500000,
                     "grande": 500001
                   },
-                  "potencial_poluidor": "A"
+                  "potencial_poluidor": "Alto"
                 },
                 {
                   "nome": "Amianto",
@@ -478,7 +478,7 @@
                     "médio": 300000,
                     "grande": 300001
                   },
-                  "potencial_poluidor": "A"
+                  "potencial_poluidor": "Alto"
                 }
               ]
             }
@@ -499,7 +499,7 @@
                     "médio": 200000,
                     "grande": 200001
                   },
-                  "potencial_poluidor": "A"
+                  "potencial_poluidor": "Alto"
                 },
                 {
                   "nome": "Rochas Betuminosas e Pirobetuminosas (Xisto Betuminoso e Xisto Pirobetuminoso)",
@@ -508,7 +508,7 @@
                     "medio": 10000,
                     "grande": 10001
                   },
-                  "potencial_poluidor": "A"
+                  "potencial_poluidor": "Alto"
                 }
               ]
             }
@@ -529,7 +529,7 @@
                     "médio": 30,
                     "grande": 31
                   },
-                  "potencial_poluidor": "A"
+                  "potencial_poluidor": "Alto"
                 },
                 {
                   "nome": "Perfuração de Poços de Petróleo ou Gás Natural",
@@ -538,7 +538,1313 @@
                     "medio": 3000,
                     "grande": 3001
                   },
-                  "potencial_poluidor": "A"
+                  "potencial_poluidor": "Alto"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "divisao": "Indústrias",
+      "grupos": [
+        {
+          "grupo": "Produtos Alimentícios e Assemelhados",
+          "atividades": [
+            {
+              "nome": "Carne e Derivados",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Frigorífico e/ou Abate de Bovinos, Eqüinos, Muares",
+                  "unidade_medida": "Capacidade Instalada (Cabeças/Dia)",
+                  "porte": {
+                    "pequeno": 100,
+                    "médio": 500,
+                    "grande": 5001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Frigorífico e/ou Abate de Caprinos, Suínos",
+                  "unidade_medida": "Capacidade Instalada (Cabeças/Dia)",
+                  "porte": {
+                    "pequeno": 300,
+                    "médio": 1000,
+                    "grande": 1001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Abate de Aves",
+                  "unidade_medida": "Capacidade Instalada (Cabeças/Dia)",
+                  "porte": {
+                    "pequeno": 10000,
+                    "médio": 50000,
+                    "grande": 50001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Beneficiamento de Carnes",
+                  "unidade_medida": "Capacidade Instalada (t de produto/Dia)",
+                  "porte": {
+                    "pequeno": 50,
+                    "médio": 200,
+                    "grande": 201
+                  },
+                  "potencial_poluidor": "Pequeno"
+                }
+              ]
+            },
+            {
+              "nome": "Laticínios",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Pasteurização e Derivados do Leite",
+                  "unidade_medida": "Capacidade Instalada (l de Leite/Dia)",
+                  "porte": {
+                    "pequeno": 25000,
+                    "médio": 250000,
+                    "grande": 250001
+                  },
+                  "potencial_poluidor": "Pequeno"
+                }
+              ]
+            },
+            {
+              "nome": "Conservas, Enlatados e Congelados de Frutas e Vegetais",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Industrialização de Frutas, Verduras e Legumes (Compotas, Geléias, Polpas, Doces, etc)",
+                  "unidade_medida": "Capacidade Instalada (t de Matéria Prima/Dia)",
+                  "porte": {
+                    "pequeno": 50,
+                    "médio": 100,
+                    "grande": 101
+                  },
+                  "potencial_poluidor": "Pequeno"
+                }
+              ]
+            },
+            {
+              "nome": "Cereais",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Fabricação de Farinhas, Amidos, Féculas de Cereais, Macarrão, Biscoitos e Assemelhados",
+                  "unidade_medida": "Capacidade Instalada (t de Produto/Dia)",
+                  "porte": {
+                    "pequeno": 100,
+                    "médio": 300,
+                    "grande": 301
+                  },
+                  "potencial_poluidor": "Pequeno"
+                },
+                {
+                  "nome": "Industrialização da Mandioca",
+                  "unidade_medida": "Capacidade Instalada (t de Produto/Dia)",
+                  "porte": {
+                    "pequeno": 50,
+                    "médio": 500,
+                    "grande": 501
+                  },
+                  "potencial_poluidor": "Médio"
+                }
+              ]
+            },
+            {
+              "nome": "Cereais",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Fabricação de Farinhas, Amidos, Féculas de Cereais, Macarrão, Biscoitos e Assemelhados",
+                  "unidade_medida": "Capacidade Instalada (t de Produto/Dia)",
+                  "porte": {
+                    "pequeno": 100,
+                    "médio": 300,
+                    "grande": 301
+                  },
+                  "potencial_poluidor": "Pequeno"
+                },
+                {
+                  "nome": "Industrialização da Mandioca",
+                  "unidade_medida": "Capacidade Instalada (t de Produto/Dia)",
+                  "porte": {
+                    "pequeno": 50,
+                    "médio": 500,
+                    "grande": 501
+                  },
+                  "potencial_poluidor": "Pequeno"
+                }
+              ]
+            },
+            {
+              "nome": "Açúcar e Confeitaria",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Produção e Refino de Açúcar Industrial",
+                  "unidade_medida": "Capacidade Instalada (t de Matéria Prima/Dia)",
+                  "porte": {
+                    "pequeno": 5000,
+                    "médio": 15000,
+                    "grande": 15001
+                  },
+                  "potencial_poluidor": "Alto"
+                }
+              ]
+            },
+            {
+              "nome": "Óleos e Gorduras Vegetais",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Fabricação de Óleos, Margarina e Outras Gorduras Vegetais",
+                  "unidade_medida": "Capacidade Instalada (t de Matéria Prima/Dia)",
+                  "porte": {
+                    "pequeno": 250,
+                    "médio": 5000,
+                    "grande": 5001
+                  },
+                  "potencial_poluidor": "Alto"
+                }
+              ]
+            },
+            {
+              "nome": "Produção e Envase de Bebidas",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Destiladas (Aguardente, Whisky e Outros)",
+                  "unidade_medida": "Capacidade Instalada (l/Dia)",
+                  "porte": {
+                    "pequeno": 5000,
+                    "médio": 50000,
+                    "grande": 50001
+                  },
+                  "potencial_poluidor": "Médio"
+                },
+                {
+                  "nome": "Fermentadas (Vinhos, Cervejas e Outros)",
+                  "unidade_medida": "Capacidade Instalada (l/Dia)",
+                  "porte": {
+                    "pequeno": 25000,
+                    "médio": 500000,
+                    "grande": 500001
+                  },
+                  "potencial_poluidor": "Médio"
+                },
+                {
+                  "nome": "Não Alcoólicas (Refrigerantes, Chá, Sucos e Assemelhados)",
+                  "unidade_medida": "Capacidade Instalada (l/Dia)",
+                  "porte": {
+                    "pequeno": 100000,
+                    "médio": 500000,
+                    "grande": 500001
+                  },
+                  "potencial_poluidor": "Pequeno"
+                },
+                {
+                  "nome": "Água Mineral",
+                  "unidade_medida": "Capacidade Instalada (l/Dia)",
+                  "porte": {
+                    "pequeno": 100000,
+                    "médio": 500000,
+                    "grande": 500001
+                  },
+                  "potencial_poluidor": "Pequeno"
+                }
+              ]
+            },
+            {
+              "nome": "Alimentos diversos",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Fabricação de Ração Animal",
+                  "unidade_medida": "Capacidade Instalada (t de Produto/Dia)",
+                  "porte": {
+                    "pequeno": 500,
+                    "médio": 5000,
+                    "grande": 5001
+                  },
+                  "potencial_poluidor": "Pequeno"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "grupo": "Produtos do Fumo",
+          "atividades": [
+            {
+              "nome": "Produtos do Fumo em Geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Processamento e Fabricação de Cigarros, Cigarrilhas, Charutos e Assemelhados",
+                  "unidade_medida": "Capacidade Instalada (t/Ano)",
+                  "porte": {
+                    "pequeno": 50000,
+                    "médio": 200000,
+                    "grande": 200001
+                  },
+                  "potencial_poluidor": "Pequeno"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "grupo": "Produtos Têxteis",
+          "atividades": [
+            {
+              "nome": "Produtos Têxteis em Geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Beneficiamento, Fiação ou Tecelagem de Fibras Têxteis",
+                  "unidade_medida": "Capacidade Instalada (t de Produto/Dia)",
+                  "porte": {
+                    "pequeno": 100,
+                    "médio": 1000,
+                    "grande": 1001
+                  },
+                  "potencial_poluidor": "Pequeno"
+                }
+              ]
+            },
+            {
+              "nome": "Fabricação de artigos têxteis",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Fabricação de Artigos Têxteis com Lavagem e/ou Pintura",
+                  "unidade_medida": "Capacidade Instalada (nº de Unidades Processadas/Dia)",
+                  "porte": {
+                    "pequeno": 10000,
+                    "médio": 100000,
+                    "grande": 100001
+                  },
+                  "potencial_poluidor": "Médio"
+                },
+                {
+                  "nome": "Fabricação de Absorventes e Fraldas Descartáveis",
+                  "unidade_medida": "Capacidade Instalada (nº de Unidades Processadas/Dia)",
+                  "porte": {
+                    "pequeno": 20000,
+                    "médio": 300000,
+                    "grande": 300001
+                  },
+                  "potencial_poluidor": "Pequeno"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "grupo": "Papel e Produtos Semelhantes",
+          "atividades": [
+            {
+              "nome": "Papel e Produtos Semelhantes em Geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Fabricação de Celulose",
+                  "unidade_medida": "Capacidade Instalada (t/Ano)",
+                  "porte": {
+                    "pequeno": 300000,
+                    "médio": 600000,
+                    "grande": 600001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Fabricação de Papel",
+                  "unidade_medida": "Capacidade Instalada (t/Ano)",
+                  "porte": {
+                    "pequeno": 10000,
+                    "médio": 50000,
+                    "grande": 50001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Fabricação de Produtos de Papel Ondulado, Cartolina, Papelão, Papel Cartão ou Semelhantes, Papel Higiênico e semelhantes",
+                  "unidade_medida": "Capacidade Instalada (t/Ano)",
+                  "porte": {
+                    "pequeno": 15000,
+                    "médio": 70000,
+                    "grande": 70001
+                  },
+                  "potencial_poluidor": "Pequeno"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "grupo": "Fabricação de Produtos Químicos",
+          "atividades": [
+            {
+              "nome": "Produtos Químicos Inorgânicos",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Gases Industriais",
+                  "unidade_medida": "Capacidade Instalada (m³/Ano)",
+                  "porte": {
+                    "pequeno": 1000000,
+                    "médio": 10000000,
+                    "grande": 100000001
+                  },
+                  "potencial_poluidor": "Médio"
+                },
+                {
+                  "nome": "Cloro e Álcalis",
+                  "unidade_medida": "Capacidade Instalada (t/Ano)",
+                  "porte": {
+                    "pequeno": 50000,
+                    "médio": 500000,
+                    "grande": 500001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Pigmentos Inorgânicos",
+                  "unidade_medida": "Capacidade Instalada (t/Ano)",
+                  "porte": {
+                    "pequeno": 50000,
+                    "médio": 500000,
+                    "grande": 500001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Ácidos Inorgânicos",
+                  "unidade_medida": "Capacidade Instalada (t/Ano)",
+                  "porte": {
+                    "pequeno": 50000,
+                    "médio": 500000,
+                    "grande": 500001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Cianetos Inorgânicos",
+                  "unidade_medida": "Capacidade Instalada (t/Ano)",
+                  "porte": {
+                    "pequeno": 50000,
+                    "médio": 500000,
+                    "grande": 500001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Cloretos Inorgânicos",
+                  "unidade_medida": "Capacidade Instalada (t/Ano)",
+                  "porte": {
+                    "pequeno": 50000,
+                    "médio": 500000,
+                    "grande": 500001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Fluoretos",
+                  "unidade_medida": "Capacidade Instalada (t/Ano)",
+                  "porte": {
+                    "pequeno": 50000,
+                    "médio": 500000,
+                    "grande": 500001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Hidróxidos",
+                  "unidade_medida": "Capacidade Instalada (t/Ano)",
+                  "porte": {
+                    "pequeno": 50000,
+                    "médio": 500000,
+                    "grande": 500001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Óxidos, Dióxidos e Peróxidos",
+                  "unidade_medida": "Capacidade Instalada (t/Ano)",
+                  "porte": {
+                    "pequeno": 50000,
+                    "médio": 500000,
+                    "grande": 500001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Sulfatos",
+                  "unidade_medida": "Capacidade Instalada (t/Ano)",
+                  "porte": {
+                    "pequeno": 50000,
+                    "médio": 500000,
+                    "grande": 500001
+                  },
+                  "potencial_poluidor": "Alto"
+                }
+              ]
+            },
+            {
+              "nome": "Fabricação de Produtos Químicos Orgânicos",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Produtos Petroquímicos Básicos e Intermediários",
+                  "unidade_medida": "Capacidade Instalada (t/Ano)",
+                  "porte": {
+                    "pequeno": 10000,
+                    "médio": 400000,
+                    "grande": 400001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Resinas Termoplásticas",
+                  "unidade_medida": "Capacidade Instalada (t/Ano)",
+                  "porte": {
+                    "pequeno": 70000,
+                    "médio": 300000,
+                    "grande": 300001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Resinas Termofixas",
+                  "unidade_medida": "Capacidade Instalada (t/Ano)",
+                  "porte": {
+                    "pequeno": 70000,
+                    "médio": 300000,
+                    "grande": 300001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Fibras Sintéticas",
+                  "unidade_medida": "Capacidade Instalada (t/Ano)",
+                  "porte": {
+                    "pequeno": 70000,
+                    "médio": 300000,
+                    "grande": 300001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Borrachas Sintéticas",
+                  "unidade_medida": "Capacidade Instalada (t/Ano)",
+                  "porte": {
+                    "pequeno": 70000,
+                    "médio": 300000,
+                    "grande": 300001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Corantes e Pigmentos Orgânicos",
+                  "unidade_medida": "Capacidade Instalada (t/Ano)",
+                  "porte": {
+                    "pequeno": 50000,
+                    "médio": 200000,
+                    "grande": 200001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Solventes Industriais",
+                  "unidade_medida": "Capacidade Instalada (t/Ano)",
+                  "porte": {
+                    "pequeno": 70000,
+                    "médio": 300000,
+                    "grande": 300001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Plastificantes",
+                  "unidade_medida": "Capacidade Instalada (t/Ano)",
+                  "porte": {
+                    "pequeno": 70000,
+                    "médio": 300000,
+                    "grande": 300001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Ácidos Orgânicos",
+                  "unidade_medida": "Capacidade Instalada (t/Ano)",
+                  "porte": {
+                    "pequeno": 70000,
+                    "médio": 300000,
+                    "grande": 300001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Alcoóis",
+                  "unidade_medida": "Capacidade Instalada (t/Ano)",
+                  "porte": {
+                    "pequeno": 70000,
+                    "médio": 300000,
+                    "grande": 300001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Aminas",
+                  "unidade_medida": "Capacidade Instalada (t/Ano)",
+                  "porte": {
+                    "pequeno": 70000,
+                    "médio": 300000,
+                    "grande": 300001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Anilinas",
+                  "unidade_medida": "Capacidade Instalada (t/Ano)",
+                  "porte": {
+                    "pequeno": 70000,
+                    "médio": 300000,
+                    "grande": 300001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Cloretos Orgânicos",
+                  "unidade_medida": "Capacidade Instalada (t/Ano)",
+                  "porte": {
+                    "pequeno": 70000,
+                    "médio": 300000,
+                    "grande": 300001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Ésteres",
+                  "unidade_medida": "Capacidade Instalada (t/Ano)",
+                  "porte": {
+                    "pequeno": 70000,
+                    "médio": 300000,
+                    "grande": 300001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Éteres",
+                  "unidade_medida": "Capacidade Instalada (t/Ano)",
+                  "porte": {
+                    "pequeno": 70000,
+                    "médio": 300000,
+                    "grande": 300001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Glicóis",
+                  "unidade_medida": "Capacidade Instalada (t/Ano)",
+                  "porte": {
+                    "pequeno": 70000,
+                    "médio": 300000,
+                    "grande": 300001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Substâncias Orgânicas Cloradas e/ou Nitradas",
+                  "unidade_medida": "Capacidade Instalada (t/Ano)",
+                  "porte": {
+                    "pequeno": 70000,
+                    "médio": 300000,
+                    "grande": 300001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Produtos Farmacêuticos",
+                  "unidade_medida": "Capacidade Instalada (t/Mês)",
+                  "porte": {
+                    "pequeno": 20,
+                    "médio": 100,
+                    "grande": 101
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Fertilizantes e Defensivos Agrícolas",
+                  "unidade_medida": "Capacidade Instalada (t/Mês)",
+                  "porte": {
+                    "pequeno": 20000,
+                    "médio": 100000,
+                    "grande": 100001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Mistura Para Fertilizantes",
+                  "unidade_medida": "Capacidade Instalada (t/Mês)",
+                  "porte": {
+                    "pequeno": 5000,
+                    "médio": 100000,
+                    "grande": 100001
+                  },
+                  "potencial_poluidor": "Médio"
+                }
+              ]
+            },
+            {
+              "nome": "Produtos de Limpeza, Polimento e Para Uso Sanitário em Geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Fabricação e Mistura de Produtos de Limpeza, Polimento e Para Uso Sanitário.",
+                  "unidade_medida": "Capacidade Instalada (t/Mês)",
+                  "porte": {
+                    "pequeno": 1000000,
+                    "médio": 10000000,
+                    "grande": 100000001
+                  },
+                  "potencial_poluidor": "Médio"
+                }
+              ]
+            },
+            {
+              "nome": "Perfumes, Cosméticos e Preparados Para Higiene Pessoal",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Fabricação e Mistura de Perfumes, Cosméticos e Preparados Para Higiene Pessoal",
+                  "unidade_medida": "Capacidade Instalada (t/Mês)",
+                  "porte": {
+                    "pequeno": 100,
+                    "médio": 1000,
+                    "grande": 1001
+                  },
+                  "potencial_poluidor": "Médio"
+                },
+                {
+                  "nome": "Tintas, Vernizes, Esmaltes, Lacas, Solventes e Produtos Correlatos",
+                  "unidade_medida": "Capacidade Instalada (l/Mês)",
+                  "porte": {
+                    "pequeno": 200000,
+                    "médio": 800000,
+                    "grande": 800001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Velas",
+                  "unidade_medida": "Capacidade Instalada (t/Mês)",
+                  "porte": {
+                    "pequeno": 100,
+                    "médio": 500,
+                    "grande": 501
+                  },
+                  "potencial_poluidor": "Pequeno"
+                },
+                {
+                  "nome": "Fabricação e Beneficiamento de Espuma (Poliuretano e Assemelhados)",
+                  "unidade_medida": "Capacidade Instalada (t/Mês)",
+                  "porte": {
+                    "pequeno": 200,
+                    "médio": 600,
+                    "grande": 601
+                  },
+                  "potencial_poluidor": "Alto"
+                }
+              ]              
+            }
+          ]
+        },
+        {
+          "grupo": "Refino do Petróleo, Produção de Biodiesel e Produtos Relacionados",
+          "atividades": [
+            {
+              "nome": "Refino do Petróleo, Produção de Biodiesel e Produtos Relacionados em Geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Refino e Re-refino do Petróleo",
+                  "unidade_medida": "Capacidade Instalada de Processamento (Barril/Ano)",
+                  "porte": {
+                    "pequeno": 50000,
+                    "médio": 100000,
+                    "grande": 100001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Usina de Asfalto e Emulsão Asfáltica",
+                  "unidade_medida": "Capacidade Instalada (t/Mês)",
+                  "porte": {
+                    "pequeno": 100000,
+                    "grande": 100001
+                  },
+                  "potencial_poluidor": "Pequeno"
+                },
+                {
+                  "nome": "Óleos e Graxas Lubrificantes",
+                  "unidade_medida": "Capacidade Instalada de Processamento (m³/Mês)",
+                  "porte": {
+                    "pequeno": 5000,
+                    "médio": 20000,
+                    "grande": 20001
+                  },
+                  "potencial_poluidor": "Médio"
+                },
+                {
+                  "nome": "Biocombustível",
+                  "unidade_medida": "Capacidade Instalada (m³/Ano)",
+                  "porte": {
+                    "pequeno": 50000,
+                    "médio": 500000,
+                    "grande": 500001
+                  },
+                  "potencial_poluidor": "Alto"
+                }
+              ]    
+            }
+          ]
+        },
+        {
+          "grupo": "Materiais de Borracha, de Plástico ou Sintéticos",
+          "atividades": [
+            {
+              "nome": "Materiais de Borracha, de Plástico ou Sintéticos em Geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Beneficiamento de Borracha Natural",
+                  "unidade_medida": "Capacidade Instalada (t/Ano)",
+                  "porte": {
+                    "pequeno": 5000,
+                    "médio": 50000,
+                    "grande": 50001
+                  },
+                  "potencial_poluidor": "Pequeno"
+                }
+              ]
+            },
+            {
+              "nome": "Fabricação e Recondicionamento de Pneus e Câmaras de Ar",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Fabricação de Pneus e Câmaras de Ar",
+                  "unidade_medida": "Capacidade Instalada (un/Mês)",
+                  "porte": {
+                    "pequeno": 10000,
+                    "médio": 280000,
+                    "grande": 280001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Recondicionamento de Pneus",
+                  "unidade_medida": "Capacidade Instalada (Unidade/Mês)",
+                  "porte": {
+                    "pequeno": 10000,
+                    "médio": 280000,
+                    "grande": 280001
+                  },
+                  "potencial_poluidor": "Médio"
+                },
+                {
+                  "nome": "Fabricação de Artefatos de Borracha ou Plástico (Baldes, PET, Elástico e Assemelhados)",
+                  "unidade_medida": "Capacidade Instalada (t/Ano)",
+                  "porte": {
+                    "pequeno": 5000,
+                    "médio": 50000,
+                    "grande": 50001
+                  },
+                  "potencial_poluidor": "Médio"
+                },
+                {
+                  "nome": "Fabricação de Calçados, Bolsas, Acessórios e Semelhantes",
+                  "unidade_medida": "Número de Unidades Produzidas (un/Dia)",
+                  "porte": {
+                    "pequeno": 5000,
+                    "médio": 20000,
+                    "grande": 20001
+                  },
+                  "potencial_poluidor": "Pequeno"
+                },
+                {
+                  "nome": "Fabricação de Equipamentos e Acessórios para Segurança e Proteção Pessoal e Profissional",
+                  "unidade_medida": "Número de Unidades Produzidas (un/Dia)",
+                  "porte": {
+                    "pequeno": 5000,
+                    "médio": 20000,
+                    "grande": 20001
+                  },
+                  "potencial_poluidor": "Pequeno"
+                }
+              ]              
+            }
+          ]
+        },
+        {
+          "grupo": "Couro e Produtos de Couro",
+          "atividades": [
+            {
+              "nome": "Couro em Geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Beneficiamento de Couros e Peles com Uso de Produto Químico",
+                  "unidade_medida": "Número de Unidades Processadas (un/Dia)",
+                  "porte": {
+                    "pequeno": 200,
+                    "médio": 2000,
+                    "grande": 2001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Beneficiamento de Couros e Peles Sem Uso de Produto Químico (Salgadeira)",
+                  "unidade_medida": "Número de Unidades Processadas (un/Dia)",
+                  "porte": {
+                    "pequeno": 500,
+                    "médio": 2000,
+                    "grande": 2001
+                  },
+                  "potencial_poluidor": "Médio"
+                },
+                {
+                  "nome": "Fabricação de Artigos de Couro",
+                  "unidade_medida": "Número de Unidades Produzidas (un/Dia)",
+                  "porte": {
+                    "pequeno": 5000,
+                    "médio": 20000,
+                    "grande": 20001
+                  },
+                  "potencial_poluidor": "Pequeno"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "grupo": "Vidro, Pedra, Argila, Gesso, Mármore e Concreto",
+          "atividades": [
+            {
+              "nome": "Vidro, Pedra, Argila e semelhantes em Geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Fabricação do Vidro",
+                  "unidade_medida": "Capacidade Instalada (t/Dia)",
+                  "porte": {
+                    "pequeno": 200,
+                    "médio": 1000,
+                    "grande": 1001
+                  },
+                  "potencial_poluidor": "Médio"
+                },
+                {
+                  "nome": "Fabricação de Cimento",
+                  "unidade_medida": "Capacidade Instalada (t/Dia)",
+                  "porte": {
+                    "pequeno": 5000,
+                    "médio": 20000,
+                    "grande": 20001
+                  },
+                  "potencial_poluidor": "Alto"
+                }
+              ]
+            },
+            {
+              "nome": "Fabricação de Artefatos de Cimento, Fibroamianto, Fibra de vidro, Pó de Mármore e concreto",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Fabricação de Artefatos de Cimento, Pó de Mármore e Concreto",
+                  "unidade_medida": "Capacidade Instalada (t de Matéria Prima/Dia)",
+                  "porte": {
+                    "pequeno": 100,
+                    "médio": 400,
+                    "grande": 401
+                  },
+                  "potencial_poluidor": "Pequeno"
+                },
+                {
+                  "nome": "Fabricação de Artefatos de Fibroamianto e Fibra de Vidro",
+                  "unidade_medida": "Capacidade Instalada (t de Matéria Prima/Dia)",
+                  "porte": {
+                    "pequeno": 100,
+                    "médio": 400,
+                    "grande": 401
+                  },
+                  "potencial_poluidor": "Alto"
+                }
+              ]
+            },
+            {
+              "nome": "Fabricação de Artefatos de Barro e Cerâmica, Refratários, Pisos e Azulejos ou Semelhantes",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Fabricação de Artefatos de Barro e Cerâmica",
+                  "unidade_medida": "Capacidade Instalada (t de Argila/Dia)",
+                  "porte": {
+                    "pequeno": 100,
+                    "médio": 500,
+                    "grande": 501
+                  },
+                  "potencial_poluidor": "Médio"
+                },
+                {
+                  "nome": "Fabricação de Refratários, Pisos e Azulejos ou Semelhantes",
+                  "unidade_medida": "Capacidade Instalada (m²/Mês)",
+                  "porte": {
+                    "pequeno": 250000,
+                    "médio": 1000000,
+                    "grande": 1000001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Fabricação de Gesso, Produtos e Artefatos",
+                  "unidade_medida": "Capacidade Instalada (t de Matéria Prima/Dia)",
+                  "porte": {
+                    "pequeno": 100,
+                    "médio": 500,
+                    "grande": 501
+                  },
+                  "potencial_poluidor": "Médio"
+                },
+                {
+                  "nome": "Aparelhamento de Mármore, Ardósia, Granito e Outras",
+                  "unidade_medida": "Capacidade Instalada (t de Matéria Prima/Dia)",
+                  "porte": {
+                    "pequeno": 30,
+                    "médio": 200,
+                    "grande": 201
+                  },
+                  "potencial_poluidor": "Médio"
+                },
+                {
+                  "nome": "Produção de Argamassa",
+                  "unidade_medida": "Volume de Produção (t/Dia)",
+                  "porte": {
+                    "pequeno": 200,
+                    "médio": 600,
+                    "grande": 601
+                  },
+                  "potencial_poluidor": "Médio"
+                },
+                {
+                  "nome": "Fabricação de Cal e Assemelhados",
+                  "unidade_medida": "Capacidade Instalada (t/dia)",
+                  "porte": {
+                    "pequeno": 100,
+                    "médio": 500,
+                    "grande": 501
+                  },
+                  "potencial_poluidor": "Alto"
+                }
+              ]              
+            }
+          ]
+        },
+        {
+          "grupo": "Metalurgia de Metais Ferrosos e Não-Ferrosos (Produtos Metálicos)",
+          "atividades": [
+            {
+              "nome": "Metalurgia de Metais Ferrosos e Não-Ferrosos e Fabricação e Acabamento de Produtos Metálicos",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Metalurgia e Fundição de Metais Ferrosos",
+                  "unidade_medida": "Capacidade Instalada (t de Produto/Ano)",
+                  "porte": {
+                    "pequeno": 10000,
+                    "médio": 120000,
+                    "grande": 120001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Metalurgia e Fundição de Metais Não Ferrosos",
+                  "unidade_medida": "Capacidade Instalada (t de Produto/Ano)",
+                  "porte": {
+                    "pequeno": 10000,
+                    "médio": 120000,
+                    "grande": 120001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Metalurgia de Metais Preciosos",
+                  "unidade_medida": "Capacidade Instalada (t de Produto/Ano)",
+                  "porte": {
+                    "pequeno": 5,
+                    "médio": 10,
+                    "grande": 11
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Fabricação de Soldas e Anodos",
+                  "unidade_medida": "Capacidade Instalada (t de Produto/Ano)",
+                  "porte": {
+                    "pequeno": 10000,
+                    "médio": 30000,
+                    "grande": 30001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Siderurgia",
+                  "unidade_medida": "Capacidade Instalada (t de Produto/Ano)",
+                  "porte": {
+                    "pequeno": 100000,
+                    "médio": 1000000,
+                    "grande": 1000001
+                  },
+                  "potencial_poluidor": "Alto"
+                }
+              ]              
+            },
+            {
+              "nome": "Fabricação de Produtos Metálicos, Exceto Máquinas e Equipamentos Industriais e Comerciais",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Fabricação de Tubos de Ferro e Aço, Tonéis, Estruturas Metálicas e Semelhantes",
+                  "unidade_medida": "Capacidade Instalada (t de Produto/Ano)",
+                  "porte": {
+                    "pequeno": 35000,
+                    "médio": 140000,
+                    "grande": 140001
+                  },
+                  "potencial_poluidor": "Médio"
+                },
+                {
+                  "nome": "Fabricação de Telas e Outros Artigos de Arame, Ferragens, Ferramentas de Corte, Fios Metálicos e Trefilados, Pregos, Tachas, Latas e Tampas e Semelhantes",
+                  "unidade_medida": "Capacidade Instalada (t de Produto/Ano)",
+                  "porte": {
+                    "pequeno": 5000,
+                    "médio": 100000,
+                    "grande": 100001
+                  },
+                  "potencial_poluidor": "Médio"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "grupo": "Máquinas e Equipamentos Industriais e Comerciais",
+          "atividades": [
+            {
+              "nome": "Máquinas e Equipamentos Industriais e Comerciais em Geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Motores e Turbinas, Máquinas, Peças, Acessórios e equipamentos",
+                  "unidade_medida": "Capacidade Instalada (un/mês)",
+                  "porte": {
+                    "pequeno": 20000,
+                    "médio": 150000,
+                    "grande": 150001
+                  },
+                  "potencial_poluidor": "Médio"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "grupo": "Equipamentos e Componentes Elétricos e Eletrônicos",
+          "atividades": [
+            {
+              "nome": "Equipamentos e Componentes Elétricos e Eletrônicos em Geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Equipamentos Para Transmissão e Distribuição de Energia Elétrica",
+                  "unidade_medida": "Capacidade Instalada (un/Mês)",
+                  "porte": {
+                    "pequeno": 1000,
+                    "médio": 5000,
+                    "grande": 50001
+                  },
+                  "potencial_poluidor": "Médio"
+                },
+                {
+                  "nome": "Equipamentos Elétricos Industriais, Aparelhos Eletrodomésticos, Fabricação de Materiais Elétricos, Computadores, Acessórios e Equipamentos De Escritório, Fabricação de Componentes e Acessórios Eletrônicos ou Equipamentos de Informática",
+                  "unidade_medida": "Capacidade Instalada (un/Mês)",
+                  "porte": {
+                    "pequeno": 1000,
+                    "médio": 50000,
+                    "grande": 400001
+                  },
+                  "potencial_poluidor": "Médio"
+                },
+                {
+                  "nome": "Fabricação de Mídias Virgens, Magnéticas e Ópticas",
+                  "unidade_medida": "Capacidade Instalada (un/Ano)",
+                  "porte": {
+                    "pequeno": 100000,
+                    "médio": 20000000,
+                    "grande": 100000001
+                  },
+                  "potencial_poluidor": "Médio"
+                }              
+              ]
+            }
+          ]
+        },
+        {
+          "grupo": "Equipamentos e Materiais de Comunicação",
+          "atividades": [
+            {
+              "nome": "Equipamentos e Materiais de Comunicação em Geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Fabricação de Centrais Telefônicas, Equipamentos e Acessórios de Radio Telefonia e Fabricação e Montagem de Televisores Rádios e Sistemas de Som",
+                  "unidade_medida": "Capacidade Instalada (un/mês)",
+                  "porte": {
+                    "pequeno": 50000,
+                    "médio": 400000,
+                    "grande": 400001
+                  },
+                  "potencial_poluidor": "Médio"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "grupo": "Equipamentos de Transporte",
+          "atividades": [
+            {
+              "nome": "Fabricação de Equipamentos de Transporte Marítimo",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Fabricação e Montagem de Embarcações e Plataformas",
+                  "porte": {
+                    "pequeno": 50,
+                    "médio": 500,
+                    "grande": 501
+                  },
+                  "potencial_poluidor": "Alto"
+                }
+              ]
+            },
+            {
+              "nome": "Fabricação de Equipamentos de Transporte Ferroviário",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Fabricação de Locomotivas e Vagões",
+                  "porte": {
+                    "pequeno": 50,
+                    "médio": 500,
+                    "grande": 501
+                  },
+                  "potencial_poluidor": "Médio"
+                }
+              ]
+            },
+            {
+              "nome": "Fabricação de Veículos e Equipamentos de Transporte Rodoviário",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Fabricação e Montagem de Veículos Automotores, Trailers e Semelhantes",
+                  "porte": {
+                    "pequeno": 50000,
+                    "médio": 300000,
+                    "grande": 300001
+                  },
+                  "potencial_poluidor": "Médio"
+                }
+              ]
+            },
+            {
+              "nome": "Fabricação de Triciclos e Motocicletas",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Fabricação e/ou Montagem de Motocicletas e Triciclos",
+                  "unidade_medida": "Capacidade Instalada (un/Ano)",
+                  "porte": {
+                    "pequeno": 100000,
+                    "médio": 800000,
+                    "grande": 800001
+                  },
+                  "potencial_poluidor": "Pequeno"
+                },
+                {
+                  "nome": "Fabricação de Bicicletas",
+                  "unidade_medida": "Capacidade Instalada (un/Ano)",
+                  "porte": {
+                    "pequeno": 100000,
+                    "médio": 800000,
+                    "grande": 800001
+                  },
+                  "potencial_poluidor": "Pequeno"
+                },
+                {
+                  "nome": "Fabricação de Carrocerias",
+                  "unidade_medida": "Capacidade Instalada (un/Ano)",
+                  "porte": {
+                    "pequeno": 1000,
+                    "médio": 8000,
+                    "grande": 8001
+                  },
+                  "potencial_poluidor": "Pequeno"
+                }
+              ]              
+            },
+            {
+              "nome": "Fabricação de Equipamentos de Transporte Aeroviário",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Fabricação e Montagem de Aeronaves",
+                  "unidade_medida": "Área Total (ha)",
+                  "porte": {
+                    "pequeno": 50,
+                    "médio": 500,
+                    "grande": 501
+                  },
+                  "potencial_poluidor": "Médio"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "grupo": "Pólos/Áreas/Distritos Industriais",
+          "atividades": [
+            {
+              "nome": "Pólos/Áreas/Distritos Industriais em Geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Áreas Industriais",
+                  "unidade_medida": "Área total (ha)",
+                  "porte": {
+                    "pequeno": 50,
+                    "médio": 500,
+                    "grande": 5001
+                  },
+                  "potencial_poluidor": "Alto"
                 }
               ]
             }
