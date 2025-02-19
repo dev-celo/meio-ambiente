@@ -7,7 +7,7 @@ const DynamicSelect = () => {
   return (
     <>
       <Header />
-      <div className="grid grid-cols-[1fr_2fr] h-screen w-full">
+      <div className="grid grid-cols-[1fr_2fr] h-screen w-full gap-6">
         <div className="bg-hero flex items-start h-full">
           <Hero />
         </div>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import data from "../../data/ambiente.json";
-import { FaLeaf, FaUsers, FaTasks, FaList, FaDollarSign, FaCheck } from "react-icons/fa";
+import { FaLeaf, FaTasks, FaDollarSign, FaCheck } from "react-icons/fa";
 
 const Form = () => {
   const [selectedDivision, setSelectedDivision] = useState("");
@@ -100,74 +100,84 @@ const Form = () => {
 
   return (
     <>
-      <div className="max-w-3xl mx-auto p-8 bg-white shadow-2xl rounded-xl mt-6">
+      <div className="max-w-6xl w-full mx-auto p-8 bg-white shadow-2xl rounded-xl mt-6">
         <div className="flex justify-center mb-6">
           <img src="./logo.png" alt="Logo" className="w-48" />
         </div>
         <form className="max-w-sm mx-auto" onSubmit={(e) => { e.preventDefault(); processarEmpreendimento(); }}>
-          <div className="flex flex-col space-y-4 items-center">
+          <div className="flex flex-col space-y-2 items-center">
             <div className="flex items-center space-x-2">
               <FaLeaf className="text-gray-600" />
-              <label className="block mb-2 text-sm font-medium text-gray-900">Selecione uma Divisão:</label>
+              <label className="block mb-0.5 text-sm font-medium text-gray-900">Selecione Divisão e Grupo</label>
             </div>
-            <select className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-[320px]" value={selectedDivision} onChange={handleDivisionChange}>
-              <option value="" disabled>Selecione uma divisão</option>
-              {divisions.map((division) => (
-                <option key={division} value={division}>{division}</option>
-              ))}
-            </select>
+
+            <div className="flex space-x-4">
+              <select
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-[250px]"
+                value={selectedDivision}
+                onChange={handleDivisionChange}
+              >
+                <option value="" disabled>Selecione uma divisão</option>
+                {divisions.map((division) => (
+                  <option key={division} value={division}>{division}</option>
+                ))}
+              </select>
+
+              {selectedDivision && (
+                <select
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-[250px]"
+                  value={selectedGroup}
+                  onChange={handleGroupChange}
+                >
+                  <option value="" disabled>Selecione um grupo</option>
+                  {groups.map((group) => (
+                    <option key={group} value={group}>{group}</option>
+                  ))}
+                </select>
+              )}
+            </div>
           </div>
 
-          {selectedDivision && (
-            <div className="flex flex-col space-y-4 items-center">
-              <div className="flex items-center space-x-2">
-                <FaUsers className="text-gray-600" />
-                <label className="block mb-2 text-sm font-medium text-gray-900">Selecione o Grupo:</label>
-              </div>
-              <select className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-[320px]" value={selectedGroup} onChange={handleGroupChange}>
-                <option value="" disabled>Selecione um grupo</option>
-                {groups.map((group) => (
-                  <option key={group} value={group}>{group}</option>
-                ))}
-              </select>
-            </div>
-          )}
-
           {selectedGroup && (
-            <div className="flex flex-col space-y-4 items-center">
+            <div className="flex flex-col space-y-2 mt-2 items-center">
               <div className="flex items-center space-x-2">
                 <FaTasks className="text-gray-600" />
-                <label className="block mb-2 text-sm font-medium text-gray-900">Selecione a Atividade</label>
+                <label className="block mb-0.5 text-sm font-medium text-gray-900">Selecione Atividade e Subcategoria</label>
               </div>
-              <select className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-[320px]" value={selectedActivity} onChange={handleActivityChange}>
-                <option value="" disabled>Selecione uma atividade</option>
-                {activities.map((activity) => (
-                  <option key={activity} value={activity}>{activity}</option>
-                ))}
-              </select>
-            </div>
-          )}
 
-          {selectedActivity && (
-            <div className="flex flex-col space-y-4 items-center">
-              <div className="flex items-center space-x-2">
-                <FaList className="text-gray-600" />
-                <label className="block mb-2 text-sm font-medium text-gray-900">Selecione a Subcategoria:</label>
+              <div className="flex space-x-4">
+                <select
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-[250px]"
+                  value={selectedActivity}
+                  onChange={handleActivityChange}
+                >
+                  <option value="" disabled>Selecione uma atividade</option>
+                  {activities.map((activity) => (
+                    <option key={activity} value={activity}>{activity}</option>
+                  ))}
+                </select>
+
+                {selectedActivity && (
+                  <select
+                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-[250px]"
+                    value={selectedSubCategory}
+                    onChange={handleSubCategoryChange}
+                  >
+                    <option value="" disabled>Selecione uma subcategoria</option>
+                    {subCategories.map((subCategory) => (
+                      <option key={subCategory} value={subCategory}>{subCategory}</option>
+                    ))}
+                  </select>
+                )}
               </div>
-              <select className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-[320px]" value={selectedSubCategory} onChange={handleSubCategoryChange}>
-                <option value="" disabled>Selecione uma subcategoria</option>
-                {subCategories.map((subCategory) => (
-                  <option key={subCategory} value={subCategory}>{subCategory}</option>
-                ))}
-              </select>
             </div>
           )}
 
           {selectedSubCategory && (
-            <div className="flex flex-col space-y-4 items-center">
+            <div className="flex flex-col space-y-1 mt-3 items-center">
               <div className="flex items-center space-x-2">
                 <FaDollarSign className="text-gray-600" />
-                <label className="block mb-2 text-sm font-medium text-gray-900">{selectedSubCategoryData?.unidade_medida}:</label>
+                <label className="block mb-2 text-sm font-medium text-gray-900">{selectedSubCategoryData?.unidade_medida}</label>
               </div>
               <input className="bg-gray-50 border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500 " type="number" value={valor} onChange={handleValorChange} />
               {error && <p className="text-red-500 text-sm">{error}</p>}
@@ -182,7 +192,7 @@ const Form = () => {
       </div>
 
       {empreendimento && (
-        <div className="fixed top-16 bg-green-500 text-white p-4 rounded-lg shadow-lg flex items-center space-x-2">
+        <div className="fixed top-20 bg-green-500 text-white p-4 rounded-lg shadow-lg flex items-center space-x-2">
           <FaCheck />
           <p>{`Empreendimento de ${empreendimento.porte} Porte e ${empreendimento.potencialPoluidor} Potencial Poluidor.`}</p>
         </div>

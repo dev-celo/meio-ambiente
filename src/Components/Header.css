@@ -44,5 +44,4 @@
 
 body {
   margin: 0; /* Remove margens externas do corpo */
-  padding-top: 70px; /* Espaçamento superior para evitar sobreposição do conteúdo pelo header */
 }
