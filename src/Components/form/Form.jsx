@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./form.css";
 import data from "../../data/ambiente.json";
 import { FaLeaf, FaTasks, FaDollarSign, FaCheck } from "react-icons/fa";
 
