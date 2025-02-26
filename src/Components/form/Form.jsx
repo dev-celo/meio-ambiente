@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./form.css";
 import data from "../../data/ambiente.json";
 import { FaLeaf, FaTasks, FaDollarSign, FaCheck } from "react-icons/fa";
 
@@ -179,7 +180,7 @@ const Form = () => {
                 <FaDollarSign className="text-gray-600" />
                 <label className="block mb-2 text-sm font-medium text-gray-900">{selectedSubCategoryData?.unidade_medida}</label>
               </div>
-              <input className="bg-gray-50 border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500 " type="number" value={valor} onChange={handleValorChange} />
+              <input className="bg-gray-50 border border-gray-300 text-dark text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500 " type="number" value={valor} onChange={handleValorChange} />
               {error && <p className="text-red-500 text-sm">{error}</p>}
             </div>
           )}
