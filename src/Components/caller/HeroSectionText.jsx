@@ -45,7 +45,7 @@ const HeroSectionText = () => {
       <div
         className="hidden lg:block w-[30rem] h-full flex-shrink-0 bg-gray-800"
         style={{
-          backgroundImage: 'url("/public/hero.png")',
+          backgroundImage: 'url("/hero.png")',
           backgroundSize: 'cover',
           backgroundPosition: 'center top 20%', // Ajuste fino no posicionamento vertical
           position: 'relative',
