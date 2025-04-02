@@ -7,6 +7,7 @@ import HeroSectionText from "./Components/caller/HeroSectionText";
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Footer from './Components/Footer/Footer';
+import Separator from './Components/Separator/Separator';
 
 const DynamicSelect = () => {
   const [heroRef, heroInView] = useInView({ threshold: 0.1 });
@@ -35,6 +36,8 @@ const DynamicSelect = () => {
       </header>
 
       <HeroSectionText />
+
+      <Separator style = {{zIndex: "100000", marginTop: "100px"}} />
 
       <section
         ref={formRef}
