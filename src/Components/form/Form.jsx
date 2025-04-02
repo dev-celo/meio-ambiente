@@ -79,28 +79,43 @@ const Form = () => {
   );
 
   const processarEmpreendimento = () => {
-    if (!selectedSubCategoryData) {
-      setError("Erro: Subcategoria não encontrada.");
-      return;
-    }
+    let porteDefinido = "";
+    let unidadeMedida = "";
+    let potencialPoluidor = "";
 
-    const porteDefinido = definirPorte(valor, selectedSubCategoryData.porte);
+    if (selectedActivityData.subcategorias.length > 0) {
+      // Validação apenas se existirem subcategorias
+      if (!selectedSubCategoryData) {
+        setError("Erro: Subcategoria não encontrada.");
+        return;
+      }
+
+      porteDefinido = definirPorte(valor, selectedSubCategoryData.porte);
+      unidadeMedida = selectedSubCategoryData.unidade_medida;
+      potencialPoluidor = selectedSubCategoryData.potencial_poluidor;
+    } else {
+      // Usar diretamente os dados da atividade caso não existam subcategorias
+      porteDefinido = "(Porte desnecessário)";
+      unidadeMedida = "Não especificado";
+      potencialPoluidor = selectedActivityData.potencial_poluidor;
+    }
 
     setEmpreendimento({
       divisao: selectedDivision,
       grupo: selectedGroup,
       atividade: selectedActivity,
-      subcategoria: selectedSubCategory,
-      unidadeMedida: selectedSubCategoryData.unidade_medida,
+      subcategoria: selectedSubCategory || "(Porte desnecessário)",
+      unidadeMedida,
       valor,
       porte: porteDefinido,
-      potencialPoluidor: selectedSubCategoryData.potencial_poluidor,
+      potencialPoluidor,
     });
   };
 
+
   return (
     <>
-      <div className="max-w-6xl w-full mx-auto p-8 bg-white shadow-2xl rounded-xl mt-6">
+      <div className="max-w-4xl w-full mx-auto p-6 sm:p-8 bg-white shadow-xl rounded-xl mt-6 space-y-6">
         <div className="flex justify-center mb-6">
           <img src="./logo.png" alt="Logo" className="w-48" />
         </div>
@@ -111,11 +126,14 @@ const Form = () => {
               <label className="block mb-0.5 text-sm font-medium text-gray-900">Selecione Divisão e Grupo</label>
             </div>
 
-            <div className="flex space-x-4">
+            <div className="flex flex-col space-y-4">
               <select
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-[250px]"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-full max-w-[300px] mx-auto"
                 value={selectedDivision}
                 onChange={handleDivisionChange}
+                style={
+                  { width: "250px" }
+                }
               >
                 <option value="" disabled>Selecione uma divisão</option>
                 {divisions.map((division) => (
@@ -125,9 +143,12 @@ const Form = () => {
 
               {selectedDivision && (
                 <select
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-[250px]"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-full max-w-[300px] mx-auto"
                   value={selectedGroup}
                   onChange={handleGroupChange}
+                  style={
+                    { width: "250px" }
+                  }
                 >
                   <option value="" disabled>Selecione um grupo</option>
                   {groups.map((group) => (
@@ -139,15 +160,17 @@ const Form = () => {
           </div>
 
           {selectedGroup && (
-            <div className="flex flex-col space-y-2 mt-2 items-center">
+            <div className="flex flex-col space-y-4 mt-4 items-center">
               <div className="flex items-center space-x-2">
                 <FaTasks className="text-gray-600" />
-                <label className="block mb-0.5 text-sm font-medium text-gray-900">Selecione Atividade e Subcategoria</label>
+                <label className="block mb-0.5 text-sm font-medium text-gray-900">
+                  Selecione Atividade e Subcategoria
+                </label>
               </div>
 
-              <div className="flex space-x-4">
+              <div className="flex flex-col space-y-4 w-full items-center">
                 <select
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-[250px]"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-full max-w-[250px]"
                   value={selectedActivity}
                   onChange={handleActivityChange}
                 >
@@ -157,9 +180,9 @@ const Form = () => {
                   ))}
                 </select>
 
-                {selectedActivity && (
+                {selectedActivity && subCategories.length > 0 && (
                   <select
-                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-[250px]"
+                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-full max-w-[250px]"
                     value={selectedSubCategory}
                     onChange={handleSubCategoryChange}
                   >
@@ -177,9 +200,17 @@ const Form = () => {
             <div className="flex flex-col space-y-1 mt-3 items-center">
               <div className="flex items-center space-x-2">
                 <FaDollarSign className="text-gray-600" />
-                <label className="block mb-2 text-sm font-medium text-gray-900">{selectedSubCategoryData?.unidade_medida}</label>
+                <label className="block mb-2 text-sm font-medium text-gray-900">{selectedSubCategoryData.unidade_medida}</label>
               </div>
-              <input className="bg-gray-50 border border-gray-300 text-dark text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500 " type="number" value={valor} onChange={handleValorChange} />
+              <input
+                className="bg-gray-50 border border-gray-300 text-dark text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                type="number"
+                value={valor}
+                onChange={handleValorChange}
+                style={
+                  { width: "250px" }
+                }
+              />
               {error && <p className="text-red-500 text-sm">{error}</p>}
             </div>
           )}
@@ -192,9 +223,13 @@ const Form = () => {
       </div>
 
       {empreendimento && (
-        <div className="fixed top-20 bg-green-500 text-white p-4 rounded-lg shadow-lg flex items-center space-x-2">
-          <FaCheck />
-          <p>{`Empreendimento de ${empreendimento.porte} Porte e ${empreendimento.potencialPoluidor} Potencial Poluidor.`}</p>
+        <div className="fixed top-20 left-1/2 transform -translate-x-1/2 bg-green-500 text-white p-4 rounded-lg shadow-lg flex items-center space-x-2 max-w-[90vw]">
+          <FaCheck className="flex-shrink-0" />
+          <p className="text-sm sm:text-base">
+            {empreendimento.porte === "(Porte desnecessário)"
+              ? `Empreendimento com ${empreendimento.potencialPoluidor} Potencial Poluidor`
+              : `Empreendimento de ${empreendimento.porte} Porte e ${empreendimento.potencialPoluidor} Potencial Poluidor`}
+          </p>
         </div>
       )}
     </>
