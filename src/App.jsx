@@ -31,7 +31,7 @@ const DynamicSelect = () => {
 
   return (
     <>
-      <header className="mt-15">
+      <header>
         <Header />
       </header>
 

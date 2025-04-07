@@ -84,7 +84,6 @@ const Form = () => {
     let potencialPoluidor = "";
 
     if (selectedActivityData.subcategorias.length > 0) {
-      // Validação apenas se existirem subcategorias
       if (!selectedSubCategoryData) {
         setError("Erro: Subcategoria não encontrada.");
         return;
@@ -94,7 +93,6 @@ const Form = () => {
       unidadeMedida = selectedSubCategoryData.unidade_medida;
       potencialPoluidor = selectedSubCategoryData.potencial_poluidor;
     } else {
-      // Usar diretamente os dados da atividade caso não existam subcategorias
       porteDefinido = "(Porte desnecessário)";
       unidadeMedida = "Não especificado";
       potencialPoluidor = selectedActivityData.potencial_poluidor;
@@ -112,120 +110,130 @@ const Form = () => {
     });
   };
 
-
   return (
     <>
-      <div className="max-w-4xl w-full mx-auto p-6 sm:p-8 bg-white shadow-xl rounded-xl mt-6 space-y-6">
-        <div className="flex justify-center mb-6">
-          <img src="./logo.png" alt="Logo" className="w-48" />
+      <div className="w-full max-w-4xl mx-auto p-4 sm:p-6 md:p-8 bg-white shadow-xl rounded-lg sm:rounded-xl mt-4 sm:mt-6 space-y-4 sm:space-y-6">
+        <div className="flex justify-center mb-4 sm:mb-6">
+          <img src="./logo.png" alt="Logo" className="w-40 sm:w-48" />
         </div>
-        <form className="max-w-sm mx-auto" onSubmit={(e) => { e.preventDefault(); processarEmpreendimento(); }}>
-          <div className="flex flex-col space-y-2 items-center">
-            <div className="flex items-center space-x-2">
-              <FaLeaf className="text-gray-600" />
-              <label className="block mb-0.5 text-sm font-medium text-gray-900">Selecione Divisão e Grupo</label>
-            </div>
-
-            <div className="flex flex-col space-y-4">
-              <select
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-full max-w-[300px] mx-auto"
-                value={selectedDivision}
-                onChange={handleDivisionChange}
-                style={
-                  { width: "250px" }
-                }
-              >
-                <option value="" disabled>Selecione uma divisão</option>
-                {divisions.map((division) => (
-                  <option key={division} value={division}>{division}</option>
-                ))}
-              </select>
-
-              {selectedDivision && (
-                <select
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-full max-w-[300px] mx-auto"
-                  value={selectedGroup}
-                  onChange={handleGroupChange}
-                  style={
-                    { width: "250px" }
-                  }
-                >
-                  <option value="" disabled>Selecione um grupo</option>
-                  {groups.map((group) => (
-                    <option key={group} value={group}>{group}</option>
-                  ))}
-                </select>
-              )}
-            </div>
-          </div>
-
-          {selectedGroup && (
-            <div className="flex flex-col space-y-4 mt-4 items-center">
-              <div className="flex items-center space-x-2">
-                <FaTasks className="text-gray-600" />
-                <label className="block mb-0.5 text-sm font-medium text-gray-900">
-                  Selecione Atividade e Subcategoria
+        
+        <form 
+          className="w-full max-w-md mx-auto" 
+          onSubmit={(e) => { 
+            e.preventDefault(); 
+            processarEmpreendimento(); 
+          }}
+        >
+          <div className="flex flex-col space-y-3 sm:space-y-4 items-center">
+            {/* Divisão e Grupo */}
+            <div className="w-full">
+              <div className="flex items-center justify-center sm:justify-start space-x-2 mb-2">
+                <FaLeaf className="text-gray-600 text-sm sm:text-base" />
+                <label className="block text-sm sm:text-base font-medium text-gray-900">
+                  Selecione Divisão e Grupo
                 </label>
               </div>
 
-              <div className="flex flex-col space-y-4 w-full items-center">
+              <div className="flex flex-col space-y-3 sm:space-y-4 w-full">
                 <select
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-full max-w-[250px]"
-                  value={selectedActivity}
-                  onChange={handleActivityChange}
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full"
+                  value={selectedDivision}
+                  onChange={handleDivisionChange}
                 >
-                  <option value="" disabled>Selecione uma atividade</option>
-                  {activities.map((activity) => (
-                    <option key={activity} value={activity}>{activity}</option>
+                  <option value="" disabled>Selecione uma divisão</option>
+                  {divisions.map((division) => (
+                    <option key={division} value={division}>{division}</option>
                   ))}
                 </select>
 
-                {selectedActivity && subCategories.length > 0 && (
+                {selectedDivision && (
                   <select
-                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-full max-w-[250px]"
-                    value={selectedSubCategory}
-                    onChange={handleSubCategoryChange}
+                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full"
+                    value={selectedGroup}
+                    onChange={handleGroupChange}
                   >
-                    <option value="" disabled>Selecione uma subcategoria</option>
-                    {subCategories.map((subCategory) => (
-                      <option key={subCategory} value={subCategory}>{subCategory}</option>
+                    <option value="" disabled>Selecione um grupo</option>
+                    {groups.map((group) => (
+                      <option key={group} value={group}>{group}</option>
                     ))}
                   </select>
                 )}
               </div>
             </div>
-          )}
 
-          {selectedSubCategory && (
-            <div className="flex flex-col space-y-1 mt-3 items-center">
-              <div className="flex items-center space-x-2">
-                <FaDollarSign className="text-gray-600" />
-                <label className="block mb-2 text-sm font-medium text-gray-900">{selectedSubCategoryData.unidade_medida}</label>
+            {/* Atividade e Subcategoria */}
+            {selectedGroup && (
+              <div className="w-full mt-2 sm:mt-4">
+                <div className="flex items-center justify-center sm:justify-start space-x-2 mb-2">
+                  <FaTasks className="text-gray-600 text-sm sm:text-base" />
+                  <label className="block text-sm sm:text-base font-medium text-gray-900">
+                    Selecione Atividade e Subcategoria
+                  </label>
+                </div>
+
+                <div className="flex flex-col space-y-3 sm:space-y-4 w-full">
+                  <select
+                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full"
+                    value={selectedActivity}
+                    onChange={handleActivityChange}
+                  >
+                    <option value="" disabled>Selecione uma atividade</option>
+                    {activities.map((activity) => (
+                      <option key={activity} value={activity}>{activity}</option>
+                    ))}
+                  </select>
+
+                  {selectedActivity && subCategories.length > 0 && (
+                    <select
+                      className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full"
+                      value={selectedSubCategory}
+                      onChange={handleSubCategoryChange}
+                    >
+                      <option value="" disabled>Selecione uma subcategoria</option>
+                      {subCategories.map((subCategory) => (
+                        <option key={subCategory} value={subCategory}>{subCategory}</option>
+                      ))}
+                    </select>
+                  )}
+                </div>
               </div>
-              <input
-                className="bg-gray-50 border border-gray-300 text-dark text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                type="number"
-                value={valor}
-                onChange={handleValorChange}
-                style={
-                  { width: "250px" }
-                }
-              />
-              {error && <p className="text-red-500 text-sm">{error}</p>}
-            </div>
-          )}
+            )}
 
-          <button type="submit" className=" mt-2.5 w-full bg-gray-700 text-white py-3 rounded-lg text-lg hover:bg-gray-900 transition duration-300 flex items-center justify-center">
-            <FaCheck className="mr-2" />
-            Enviar
-          </button>
+            {/* Valor */}
+            {selectedSubCategory && (
+              <div className="w-full mt-2 sm:mt-3">
+                <div className="flex items-center justify-center sm:justify-start space-x-2 mb-2">
+                  <FaDollarSign className="text-gray-600 text-sm sm:text-base" />
+                  <label className="block text-sm sm:text-base font-medium text-gray-900">
+                    {selectedSubCategoryData.unidade_medida}
+                  </label>
+                </div>
+                <input
+                  className="bg-gray-50 border border-gray-300 text-dark text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                  type="number"
+                  value={valor}
+                  onChange={handleValorChange}
+                />
+                {error && <p className="text-red-500 text-xs sm:text-sm mt-1">{error}</p>}
+              </div>
+            )}
+
+            {/* Botão Enviar */}
+            <button 
+              type="submit" 
+              className="mt-3 sm:mt-4 w-full bg-gray-700 text-white py-2 sm:py-3 rounded-lg text-sm sm:text-base hover:bg-gray-900 transition duration-300 flex items-center justify-center"
+            >
+              <FaCheck className="mr-2 text-xs sm:text-sm" />
+              Enviar
+            </button>
+          </div>
         </form>
       </div>
 
       {empreendimento && (
-        <div className="fixed top-20 left-1/2 transform -translate-x-1/2 bg-green-500 text-white p-4 rounded-lg shadow-lg flex items-center space-x-2 max-w-[90vw]">
-          <FaCheck className="flex-shrink-0" />
-          <p className="text-sm sm:text-base">
+        <div className="fixed top-16 sm:top-20 left-1/2 transform -translate-x-1/2 bg-green-500 text-white p-2 sm:p-4 rounded-lg shadow-lg flex items-center space-x-2 max-w-[90vw] sm:max-w-md">
+          <FaCheck className="flex-shrink-0 text-xs sm:text-sm" />
+          <p className="text-xs sm:text-sm">
             {empreendimento.porte === "(Porte desnecessário)"
               ? `Empreendimento com ${empreendimento.potencialPoluidor} Potencial Poluidor`
               : `Empreendimento de ${empreendimento.porte} Porte e ${empreendimento.potencialPoluidor} Potencial Poluidor`}
