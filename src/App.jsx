@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 import { useEffect } from 'react';
-import "./App.css";
 import Header from "./Components/Header";
 import Form from "./Components/form/Form";
 import HeroSectionText from "./Components/caller/HeroSectionText";
