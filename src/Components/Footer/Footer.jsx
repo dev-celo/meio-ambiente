@@ -64,7 +64,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start space-x-2">
                 <FaMapMarkerAlt className="text-emerald-400 mt-1" />
-                <span className="text-gray-400">RUA ITAPAGIPE, 113, CENTRO, IPIAÚ, BAHIA<br />São Paulo/SP</span>
+                <span className="text-gray-400">RUA ITAPAGIPE, 113, CENTRO, IPIAÚ<br />BAHIA/BA</span>
               </li>
             </ul>
           </div>
