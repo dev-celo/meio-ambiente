@@ -35,7 +35,7 @@ const Header = () => {
             <ul className="flex space-x-6">
               <li>
                 <a 
-                  href="#home" 
+                  href="/" 
                   className="text-white hover:text-emerald-300 transition-colors duration-300 font-medium text-sm uppercase tracking-wider relative group"
                 >
                   Início
@@ -44,7 +44,7 @@ const Header = () => {
               </li>
               <li>
                 <a 
-                  href="#about" 
+                  href="about" 
                   className="text-white hover:text-emerald-300 transition-colors duration-300 font-medium text-sm uppercase tracking-wider relative group"
                 >
                   Sobre
@@ -53,7 +53,7 @@ const Header = () => {
               </li>
               <li>
                 <a 
-                  href="#contact" 
+                  href="contact" 
                   className="text-white hover:text-emerald-300 transition-colors duration-300 font-medium text-sm uppercase tracking-wider relative group"
                 >
                   Contato
