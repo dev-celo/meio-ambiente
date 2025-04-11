@@ -40,7 +40,7 @@ const HeroSectionText = () => {
   };
 
   return (
-    <div className="relative min-h-screen flex bg-white overflow-hidden">
+    <div className="relative min-h-screen flex bg-white overflow-hidden mt-2">
       {/* Seção da Imagem (apenas desktop) */}
       <div
         className="hidden lg:block w-[30rem] h-[calc(100vh-2.5rem)] flex-shrink-0 bg-gray-800 mt-10"
