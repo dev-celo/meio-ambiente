@@ -657,32 +657,6 @@
               ]
             },
             {
-              "nome": "Cereais",
-              "descricao": "",
-              "subcategorias": [
-                {
-                  "nome": "Fabricação de Farinhas, Amidos, Féculas de Cereais, Macarrão, Biscoitos e Assemelhados",
-                  "unidade_medida": "Capacidade Instalada (t de Produto/Dia)",
-                  "porte": {
-                    "pequeno": 100,
-                    "médio": 300,
-                    "grande": 301
-                  },
-                  "potencial_poluidor": "Pequeno"
-                },
-                {
-                  "nome": "Industrialização da Mandioca",
-                  "unidade_medida": "Capacidade Instalada (t de Produto/Dia)",
-                  "porte": {
-                    "pequeno": 50,
-                    "médio": 500,
-                    "grande": 501
-                  },
-                  "potencial_poluidor": "Pequeno"
-                }
-              ]
-            },
-            {
               "nome": "Açúcar e Confeitaria",
               "descricao": "",
               "subcategorias": [
