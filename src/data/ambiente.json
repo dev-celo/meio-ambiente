@@ -1851,6 +1851,789 @@
           ]
         }
       ]
+    },
+    {
+      "divisao": "Transporte",
+      "grupos": [
+        {
+          "grupo": "Bases Operacionais",
+          "atividades": [
+            {
+              "nome": "Bases Operacionais em Geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Bases Operacionais de Transporte Ferroviários, Aéreo de Cargas, Transportadora de Passageiros e Cargas Não Perigosas",
+                  "unidade_medida": "Área Total (ha)",
+                  "porte": {
+                    "pequeno": 50,
+                    "médio": 500,
+                    "grande": 501
+                  },
+                  "potencial_poluidor": "Médio"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "grupo": "Transporte Aéreo",
+          "atividades": [
+            {
+              "nome": "Transporte Aéreo em Geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Bases Operacionais de Transportadora de Produtos e/ou Resíduos Perigosos, com Lavagem Interna e/ou Externa",
+                  "unidade_medida": "Área Total (ha)",
+                  "porte": {
+                    "pequeno": 50,
+                    "médio": 500,
+                    "grande": 501
+                  },
+                  "potencial_poluidor": "Médio"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "grupo": "Transporte Rodoviário de Cargas Perigosas",
+          "atividades": [
+            {
+              "nome": "Transporte Rodoviário de Cargas Perigosas em Geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Transportadora de Resíduos e/ou Produtos Perigosos e de Serviços de Saúde",
+                  "unidade_medida": "Capacidade de Carga (t/mês)",
+                  "porte": {
+                    "pequeno": 5000,
+                    "médio": 10000,
+                    "grande": 10001
+                  },
+                  "potencial_poluidor": "Pequeno"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "grupo": "Transporte de Substâncias Através de Dutos",
+          "atividades": [
+            {
+              "nome": "Transporte de Substâncias Através de Dutos em Geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Dutos de Petróleo Cru (Oleodutos), de Petróleo Refinado, Gasolina, Derivados de Petróleo, Gases, Produtos Químicos Diversos e Minérios",
+                  "unidade_medida": "Extensão (Km)",
+                  "porte": {
+                    "pequeno": 100,
+                    "médio": 500,
+                    "grande": 501
+                  },
+                  "potencial_poluidor": "Alto"
+                }
+              ]
+            }
+          ]
+        }    
+      ]
+    },
+    {
+      "divisao": "Serviços",
+      "grupos": [
+        {
+          "grupo": "Produção, Compressão, Estocagem e Distribuição de Gás Natural e GLP",
+          "atividades": [
+            {
+              "nome": "Produção, Compressão, Estocagem e Distribuição de Gás Natural e GLP em geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Estocagem de Gás Natural",
+                  "unidade_medida": "Capacidade de Armazenamento (m³)",
+                  "porte": {
+                    "pequeno": 10000,
+                    "médio": 100000,
+                    "grande": 100001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Estação De Compressão E Distribuição de Gás Natural",
+                  "unidade_medida": "Capacidade Instalada (m³/h)",
+                  "porte": {
+                    "pequeno": 40000,
+                    "médio": 600000,
+                    "grande": 600001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Estação de Custódia (Ponto de Entrega)",
+                  "unidade_medida": "Vazão (m³/dia)",
+                  "porte": {
+                    "pequeno": 1000000,
+                    "médio": 8000000,
+                    "grande": 8000001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Terminais de Regaseificação GNL",
+                  "unidade_medida": "Vazão (m³/h)",
+                  "porte": {
+                    "pequeno": 100000,
+                    "médio": 500000,
+                    "grande": 500001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Estocagem de GLP",
+                  "unidade_medida": "Vasilhame (unid.)",
+                  "porte": {
+                    "pequeno": 50000,
+                    "médio": 150000,
+                    "grande": 150000
+                  },
+                  "potencial_poluidor": "Médio"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "grupo": "Geração, Transmissão e Distribuição de Energia",
+          "atividades": [
+            {
+              "nome": "Geração, Transmissão e Distribuição de Energia em geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Hidrelétricas",
+                  "unidade_medida": "Área de Inundação (ha)",
+                  "porte": {
+                    "pequeno": 200,
+                    "médio": 1000,
+                    "grande": 1001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Termoelétricas ou Grupos Geradores",
+                  "unidade_medida": "Potência Instalada (MW)",
+                  "porte": {
+                    "pequeno": 150,
+                    "médio": 500,
+                    "grande": 501
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Construção de Linhas de Distribuição de Energia Elétrica > 69 Kv",
+                  "unidade_medida": "Extensão (Km)",
+                  "porte": {
+                    "pequeno": 150,
+                    "médio": 750,
+                    "grande": 751
+                  },
+                  "potencial_poluidor": "Médio"
+                },
+                {
+                  "nome": "Geração de Energia Elétrica por Fonte Eólica",
+                  "unidade_medida": "Aerogeradores instalados (unid.)",
+                  "descricao": "Empreendimento sujeito a reclassificação, para a classe 6, com exigência da apresentação do EIA/RIMA, nos termos da Resolução CONAMA",
+                  "porte": {
+                    "pequeno": 30,
+                    "médio": 120,
+                    "grande": 121
+                  },
+                  "potencial_poluidor": "Pequeno"
+                },
+                {
+                  "nome": "Construção de Linhas de Transmissão de Energia Elétrica",
+                  "unidade_medida": "Extensão (Km)",
+                  "descricao": "Empreendimento sujeito, nos termos da Portaria MMA 421, a reclassificação, para a classe 6, com exigência da apresentação do EIA/RIMA, sempre que implicar em: - remoção de população que implique na inviabilização da comunidade e/ou sua completa remoção; - localização em sítios de reprodução e descanso identificados nas rotas de aves migratórias; endemismo restrito e espécies ameaçadas de extinção reconhecidas oficialmente; - supressão de vegetação nativa arbórea acima de 60% da área total da faixa de servidão definida pela declaração de utilidade pública ou de acordo com a NBR 5422 e suas atualizações, conforme o caso; IV) afetar unidades de conservação de proteção integral; V) promover intervenção física em cavidades naturais subterrâneas pela implantação de torres ou subestações.",
+                  "porte": {
+                    "pequeno": 149,
+                    "médio": 750,
+                    "grande": 751
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Geração de Energia Solar Fotovoltaica",
+                  "unidade_medida": "Área total da Usina Solar instalada (ha)",
+                  "porte": {
+                    "pequeno": 50,
+                    "médio": 200,
+                    "grande": 201
+                  },
+                  "potencial_poluidor": "Pequeno"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "grupo": "Estocagem e Distribuição de Produtos",
+          "atividades": [
+            {
+              "nome": "Estocagem e Distribuição de Produtos em Geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Terminais de minério",
+                  "unidade_medida": "Capacidade de Armazenamento (t)",
+                  "porte": {
+                    "pequeno": 50000,
+                    "médio": 100000,
+                    "grande": 100001
+                  },
+                  "potencial_poluidor": "Médio"
+                },
+                {
+                  "nome": "Terminais de Petróleo e Derivados e de Produtos Químicos Diversos",
+                  "unidade_medida": "Capacidade de Armazenamento (t)",
+                  "porte": {
+                    "pequeno": 10000,
+                    "médio": 40000,
+                    "grande": 40001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Terminais de produtos agrícolas industrializados",
+                  "unidade_medida": "Capacidade de Armazenamento (t)",
+                  "porte": {
+                    "pequeno": 10000,
+                    "médio": 40000,
+                    "grande": 40001
+                  },
+                  "potencial_poluidor": "Pequeno"
+                },
+                {
+                  "nome": "Postos de Venda de Gasolina e Outros Combustíveis",
+                  "unidade_medida": "Capacidade de Armazenamento de Combustíveis Líquidos (m³) e de Combustíveis Líquidos Mais GNV ou GNC",
+                  "porte": {
+                    "pequeno": 600,
+                    "médio": 900,
+                    "grande": 901
+                  },
+                  "potencial_poluidor": "Médio"
+                },
+                {
+                  "nome": "Entrepostos Aduaneiros de Produtos Não Perigosos, Terminais de Estocagem e Distribuição de Produtos Não Perigosos e Não Classificados",
+                  "unidade_medida": "Área Total (ha)",
+                  "porte": {
+                    "pequeno": 50,
+                    "médio": 500,
+                    "grande": 501
+                  },
+                  "potencial_poluidor": "Pequeno"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "grupo": "Serviços de Abastecimento de Água",
+          "atividades": [
+            {
+              "nome": "Serviços de Abastecimento de Água em Geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Construção ou Ampliação de Sistema de Abastecimento Público de Água (Captação, Adução, Tratamento, Reservação)",
+                  "unidade_medida": "Vazão Média (l/s)",
+                  "porte": {
+                    "pequeno": 50,
+                    "médio": 600,
+                    "grande": 5001
+                  },
+                  "potencial_poluidor": "Pequeno"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "grupo": "Serviços de esgotamento sanitário coleta, transporte, tratamento e disposição de esgotos domésticos (inclusive interceptores e emissários)",
+          "atividades": [
+            {
+              "nome": "Serviços de esgotamento sanitário coleta, transporte, tratamento e disposição de esgotos em Geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Construção ou Ampliação de Sistema de Esgotamento Sanitário (Redes de Coleta, Interceptores, Tratamento e Disposição Final de Esgotos Domésticos)",
+                  "unidade_medida": "Vazão Média (l/s)",
+                  "porte": {
+                    "pequeno": 50,
+                    "médio": 600,
+                    "grande": 601
+                  },
+                  "potencial_poluidor": "Alto"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "grupo": "Serviços de gerenciamento integrado de resíduos sólidos urbanos (coleta, transporte, tratamento e disposição final)",
+          "atividades": [
+            {
+              "nome": "Serviços de gerenciamento integrado de resíduos sólidos urbanos em Geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Usinas de Compostagem e Triagem de Materiais e Resíduos Urbanos",
+                  "unidade_medida": "Quantidade Operada (t/dia)",
+                  "porte": {
+                    "pequeno": 30,
+                    "médio": 200,
+                    "grande": 201
+                  },
+                  "potencial_poluidor": "Médio"
+                },
+                {
+                  "nome": "Reciclagem de Materiais Metálicos, Triagem de Materiais Recicláveis (Que Inclua Pelo Menos Uma Etapa do Processo de Industrialização)",
+                  "unidade_medida": "Capacidade de Processamento (t/Dia)",
+                  "porte": {
+                    "pequeno": 6,
+                    "médio": 20,
+                    "grande": 21
+                  },
+                  "potencial_poluidor": "Pequeno"
+                },
+                {
+                  "nome": "Reciclagem de Papel, Papelão e Similares, Vidros e de Materiais Plásticos",
+                  "unidade_medida": "Capacidade Instalada (t/dia)",
+                  "porte": {
+                    "pequeno": 50,
+                    "médio": 150,
+                    "grande": 151
+                  },
+                  "potencial_poluidor": "Pequeno"
+                },
+                {
+                  "nome": "Aterros Sanitários",
+                  "unidade_medida": "Produção (t/dia)",
+                  "porte": {
+                    "pequeno": 100,
+                    "médio": 500,
+                    "grande": 501
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Áreas de Bota-Fora",
+                  "unidade_medida": "Área Total (ha)",
+                  "porte": {
+                    "pequeno": 20,
+                    "médio": 100,
+                    "grande": 101
+                  },
+                  "potencial_poluidor": "Pequeno"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "grupo": "Serviços de coleta, transporte, estocagem, tratamento e disposição de resíduos industriais",
+          "atividades": [
+            {
+              "nome": "Aterro e Estocagem de Resíduos Industriais em Geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Aterro e Estocagem de Resíduos Industriais",
+                  "unidade_medida": "Área Total (ha)",
+                  "porte": {
+                    "pequeno": 30,
+                    "médio": 150,
+                    "grande": 151
+                  },
+                  "potencial_poluidor": "Alto"
+                }
+              ]
+            },
+            {
+              "nome": "Tratamento centralizado de resíduos industriais",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Incineradores de Resíduos Industriais e de Saúde",
+                  "unidade_medida": "Capacidade de Processamento (t/ano)",
+                  "porte": {
+                    "pequeno": 2000,
+                    "médio": 20000,
+                    "grande": 20001
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Landfarming",
+                  "unidade_medida": "Área Total (ha)",
+                  "porte": {
+                    "pequeno": 30,
+                    "médio": 100,
+                    "grande": 101
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Blending",
+                  "unidade_medida": "Capacidade de Processamento (t/ano)",
+                  "porte": {
+                    "pequeno": 30000,
+                    "médio": 100000,
+                    "grande": 100001
+                  },
+                  "potencial_poluidor": "Alto"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "grupo": "Serviços de coleta, tratamento e disposição de efluentes líquidos industriais",
+          "atividades": [
+            {
+              "nome": "Serviços de coleta, tratamento e disposição de efluentes líquidos industriais em Geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Estações de Tratamento e Equipamentos Associados",
+                  "unidade_medida": "Vazão Média (l/s)",
+                  "porte": {
+                    "pequeno": 300,
+                    "médio": 800,
+                    "grande": 801
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Sistemas e Disposição Oceânica",
+                  "unidade_medida": "Vazão Média (l/s)",
+                  "porte": {
+                    "pequeno": 300,
+                    "médio": 1500,
+                    "grande": 1501
+                  },
+                  "potencial_poluidor": "Alto"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "grupo": "Telefonia Celular",
+          "atividades": [
+            {
+              "nome": "Telefonia Celular em Geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Estações Rádio-Base de Telefonia Celular",
+                  "unidade_medida": "Potência do Transmissor (W)",
+                  "porte": {
+                    "pequeno": 1000,
+                    "médio": 10000,
+                    "grande": 10001
+                  },
+                  "potencial_poluidor": "Pequeno"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "grupo": "Serviços Funerários",
+          "atividades": [
+            {
+              "nome": "Serviços Funerários em Geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Cemitérios",
+                  "unidade_medida": "Área Útil (ha)",
+                  "porte": {
+                    "pequeno": 5,
+                    "médio": 30,
+                    "grande": 31
+                  },
+                  "potencial_poluidor": "Pequeno"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "grupo": "Outros Serviços",
+          "atividades": [
+            {
+              "nome": "Outros Serviços em Geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Tinturaria e Lavanderias Industrial/Hospitalar",
+                  "unidade_medida": "Número de Unidades Processadas (un/Dia)",
+                  "porte": {
+                    "pequeno": 3000,
+                    "médio": 8000,
+                    "grande": 8001
+                  },
+                  "potencial_poluidor": "Médio"
+                },
+                {
+                  "nome": "Manutenção Industrial, Jateamento, Pintura e Correlatos",
+                  "unidade_medida": "Área Construída (ha)",
+                  "porte": {
+                    "pequeno": 0.5,
+                    "médio": 5,
+                    "grande": 5.1
+                  },
+                  "potencial_poluidor": "Médio"
+                },
+                {
+                  "nome": "Serviços de calderaria, usinagem, solda, tratamento, e revestimento em metais",
+                  "unidade_medida": "Área utilizada (ha)",
+                  "porte": {
+                    "pequeno": 0.5,
+                    "médio": 40,
+                    "grande": 40.1
+                  },
+                  "potencial_poluidor": "Médio"
+                },
+                {
+                  "nome": "Serviços de Descontaminação de Lâmpadas Fluorescentes ou Reciclagem",
+                  "unidade_medida": "Capacidade Instalada (un/Mês)",
+                  "porte": {
+                    "pequeno": 220000,
+                    "médio": 400000,
+                    "grande": 400001
+                  },
+                  "potencial_poluidor": "Médio"
+                },
+                {
+                  "nome": "Concreto e Argamassa",
+                  "unidade_medida": "Volume de Produção (t/dia)",
+                  "porte": {
+                    "pequeno": 200,
+                    "médio": 1000,
+                    "grande": 1001
+                  },
+                  "potencial_poluidor": "Pequeno"
+                },
+                {
+                  "nome": "Serviços de Lavagem, Descontaminação e Manutenção de Tanques e Isotanques",
+                  "unidade_medida": "Área Total (ha)",
+                  "porte": {
+                    "pequeno": 1,
+                    "médio": 5,
+                    "grande": 5.1
+                  },
+                  "potencial_poluidor": "Médio"
+                },
+                {
+                  "nome": "Serviços de Britagem, Resíduos da Construção Civil e Outros",
+                  "unidade_medida": "Capacidade Instalada (t/ano)",
+                  "porte": {
+                    "pequeno": 180000,
+                    "médio": 720000,
+                    "grande": 720001
+                  },
+                  "potencial_poluidor": "Médio"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "divisao": "OBRAS CIVIS",
+      "grupos": [
+        {
+          "grupo": "Infraestrutura de Transporte",
+          "atividades": [
+            {
+              "nome": "Infraestrutura de Transporte em Geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Complexos Viários (Implantação ou Ampliação de estradas, pontes e afins)",
+                  "unidade_medida": "Extensão (Km)",
+                  "porte": {
+                    "pequeno": 100,
+                    "médio": 500,
+                    "grande": 501
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Ferrovias",
+                  "unidade_medida": "Extensão (Km)",
+                  "porte": {
+                    "pequeno": 100,
+                    "médio": 500,
+                    "grande": 501
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Hidrovias",
+                  "unidade_medida": "Extensão (Km)",
+                  "porte": {
+                    "pequeno": 100,
+                    "médio": 500,
+                    "grande": 501
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Portos",
+                  "unidade_medida": "Área Total (ha)",
+                  "porte": {
+                    "pequeno": 100,
+                    "médio": 500,
+                    "grande": 501
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Marinas e Atracadouros e Instalações de Manutenção de Embarcações",
+                  "unidade_medida": "Área Total (ha)",
+                  "porte": {
+                    "pequeno": 10,
+                    "médio": 50,
+                    "grande": 51
+                  },
+                  "potencial_poluidor": "Médio"
+                },
+                {
+                  "nome": "Aeroportos",
+                  "unidade_medida": "Área Total (ha)",
+                  "porte": {
+                    "pequeno": 100,
+                    "médio": 500,
+                    "grande": 501
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Autódromos e Aeródromos",
+                  "unidade_medida": "Área Total construída (ha)",
+                  "porte": {
+                    "pequeno": 10,
+                    "médio": 50,
+                    "grande": 51
+                  },
+                  "potencial_poluidor": "Médio"
+                },
+                {
+                  "nome": "Metrôs",
+                  "unidade_medida": "Extensão (Km)",
+                  "porte": {
+                    "pequeno": 20,
+                    "médio": 50,
+                    "grande": 51
+                  },
+                  "potencial_poluidor": "Médio"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "grupo": "Barragens e Diques",
+          "atividades": [
+            {
+              "nome": "Barragens e Diques em Geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Barragens e Diques",
+                  "unidade_medida": "Área de Inundação (ha)",
+                  "porte": {
+                    "pequeno": 200,
+                    "médio": 1000,
+                    "grande": 1001
+                  },
+                  "potencial_poluidor": "Alto"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "grupo": "Canais",
+          "atividades": [
+            {
+              "nome": "Canais em Geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Canais",
+                  "unidade_medida": "Vazão (m³/s)",
+                  "porte": {
+                    "pequeno": 2.0,
+                    "médio": 6.0,
+                    "grande": 6.1
+                  },
+                  "potencial_poluidor": "Médio"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "grupo": "Retificação de Cursos D´Água",
+          "atividades": [
+            {
+              "nome": "Retificação de Cursos D´Água em Geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Retificação de Cursos d´Água",
+                  "unidade_medida": "Extensão (Km)",
+                  "porte": {
+                    "pequeno": 10,
+                    "médio": 30,
+                    "grande": 31
+                  },
+                  "potencial_poluidor": "Médio"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "grupo": "Transposição de Bacias Hidrográficas",
+          "atividades": [
+            {
+              "nome": "Transposição de Bacias Hidrográficas em Geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Transposição de Bacias Hidrográficas",
+                  "unidade_medida": "Vazão (m³/s)",
+                  "porte": {
+                    "pequeno": 2.0,
+                    "médio": 6.0,
+                    "grande": 6.1
+                  },
+                  "potencial_poluidor": "Alto"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
