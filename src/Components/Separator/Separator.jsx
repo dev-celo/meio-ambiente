@@ -3,7 +3,7 @@ import { FaLeaf } from "react-icons/fa";
 
 const Separator = () => {
   return (
-    <div className="relative my-12">
+    <div className="relative my-6">
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="w-full max-w-4xl mx-auto border-t border-gray-200"></div>
       </div>
