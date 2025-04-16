@@ -68,21 +68,6 @@ const FormCompleted = () => {
               <Form />
             </motion.div>
           </div>
-
-          {/* Seção Ilustrativa (opcional) */}
-          <div className="hidden lg:block bg-gradient-to-br from-emerald-500 to-teal-600">
-            <div className="h-full flex items-center justify-center p-12">
-              <div className="text-white text-center">
-                <svg className="w-24 h-24 mx-auto mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
-                </svg>
-                <h3 className="text-2xl font-bold mb-3">Soluções Personalizadas</h3>
-                <p className="text-emerald-100 opacity-90">
-                  Nossa equipe especializada entrará em contato em até 24h
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </motion.div>
     </section>
