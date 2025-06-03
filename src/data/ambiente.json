@@ -2608,6 +2608,166 @@
           ]
         }
       ]
+    },
+    {
+      "divisao": "Empreendimentos Urbanísticos, Turísticos e de Lazer",
+      "grupos": [
+        {
+          "grupo": "Artes, Cultura, Esporte e Recreação",
+          "atividades": [
+            {
+              "nome": "Artes, Cultura, Esporte e Recreação em Geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Estádios de Futebol, Parques Temáticos, de Diversão e de Exposição, Jardins Botânicos",
+                  "unidade_medida": "Área Total (ha)",
+                  "porte": {
+                    "pequeno": 10,
+                    "médio": 50,
+                    "grande": 51
+                  },
+                  "potencial_poluidor": "Pequeno"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "grupo": "Empreendimentos Urbanísticos",
+          "atividades": [
+            {
+              "nome": "Empreendimentos Urbanísticos em Geral",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Complexos Turísticos e Empreendimentos Hoteleiros",
+                  "unidade_medida": "Área Total (ha)",
+                  "porte": {
+                    "pequeno": 100,
+                    "médio": 500,
+                    "grande": 501
+                  },
+                  "potencial_poluidor": "Alto"
+                },
+                {
+                  "nome": "Parcelamento do Solo (Loteamentos, Desmembramentos)",
+                  "unidade_medida": "Área Total (ha)",
+                  "porte": {
+                    "pequeno": 50,
+                    "médio": 200,
+                    "grande": 2001
+                  },
+                  "potencial_poluidor": "Médio"
+                },
+                {
+                  "nome": "Conjuntos Habitacionais",
+                  "unidade_medida": "Área Total (ha)",
+                  "porte": {
+                    "pequeno": 50,
+                    "médio": 200,
+                    "grande": 201
+                  },
+                  "potencial_poluidor": "Médio"
+                },
+                {
+                  "nome": "Habitação de Interesse Social",
+                  "unidade_medida": "Área Total (ha)",
+                  "porte": {
+                    "pequeno": 30,
+                    "médio": 100,
+                    "grande": 101
+                  },
+                  "potencial_poluidor": "Médio"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "divisao": "Fauna Silvestre",
+      "grupos": [
+        {
+          "grupo": "Criação de Animais Silvestres",
+          "atividades": [
+            {
+              "nome": "Criação Confinadas e Semi-confinadas",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Criadouros comerciais",
+                  "unidade_medida": "Área Total (ha)",
+                  "porte": {
+                    "pequeno": 5,
+                    "médio": 20,
+                    "grande": 21
+                  },
+                  "potencial_poluidor": "Médio"
+                },
+                {
+                  "nome": "Criadouros científicos, CRAS, CETAS e mantenedores",
+                  "unidade_medida": "Área Total (ha)",
+                  "porte": {
+                    "pequeno": 5,
+                    "médio": 20,
+                    "grande": 21
+                  },
+                  "potencial_poluidor": "Pequeno"
+                },
+                {
+                  "nome": "Zoológicos",
+                  "unidade_medida": "Área Total (ha)",
+                  "porte": {
+                    "pequeno": 5,
+                    "médio": 20,
+                    "grande": 21
+                  },
+                  "potencial_poluidor": "Médio"
+                }
+              ]
+            },
+            {
+              "nome": "Criações livres",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Criadouros comerciais de abelhas",
+                  "unidade_medida": "Número de colônias",
+                  "porte": {
+                    "pequeno": 200,
+                    "médio": 500,
+                    "grande": 501
+                  },
+                  "potencial_poluidor": "Pequeno"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "grupo": "Abatedouros e frigoríficos de animais silvestres",
+          "atividades": [
+            {
+              "nome": "Abatedouros e frigoríficos",
+              "descricao": "",
+              "subcategorias": [
+                {
+                  "nome": "Abatedouros e frigoríficos",
+                  "unidade_medida": "Capacidade instalada (Cabeça/dia)",
+                  "porte": {
+                    "pequeno": 100,
+                    "médio": 200,
+                    "grande": 201
+                  },
+                  "potencial_poluidor": "Alto"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
