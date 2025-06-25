@@ -2,6 +2,7 @@ import { useState } from "react";
 import data from "../../data/ambiente.json";
 import { FaLeaf, FaTasks, FaDollarSign, FaCheck } from "react-icons/fa";
 import LeadCaptureModalForce from "../LeadCaptureModalForce/LeadCaptureModalForce";
+import { useNavigate } from "react-router-dom";
 
 const Form = () => {
   const [selectedDivision, setSelectedDivision] = useState("");
@@ -13,6 +14,7 @@ const Form = () => {
   const [error, setError] = useState("");
   const [formularioEnviado, setFormularioEnviado] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const navigate = useNavigate();
 
   const definirPorte = (valor, porte) => {
     if (valor <= porte.pequeno) return "Pequeno";
@@ -83,6 +85,7 @@ const Form = () => {
     setFormularioEnviado(true);
     setShowModal(false);
     console.log("Empreendimento salvo com dados de contato:", dadosCompletos);
+    navigate("/enquadramentos");
   };
 
 

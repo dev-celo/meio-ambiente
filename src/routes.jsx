@@ -3,6 +3,7 @@ import NotFound from './Components/NotFound/NotFound';
 import DynamicSelect from './App';
 import Contact from './Pages/ContactPage/Contact';
 import AboutPage from './Pages/AboutPage/AboutPage';
+import PerfilAmbiental from './Pages/EnquadramentoAmbiental/Enquadramento';
 
 function AppRoutes() {
   return (
@@ -11,6 +12,7 @@ function AppRoutes() {
         <Route path="/" element={<DynamicSelect />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/enquadramentos" element={<PerfilAmbiental />} />
         <Route path="*" element={<NotFound />} /> {/* Rota para 404 */}
       </Routes>
     </Router>
