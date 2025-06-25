@@ -60,6 +60,16 @@ const Header = () => {
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-400 transition-all duration-300 group-hover:w-full"></span>
                 </a>
               </li>
+
+              <li>
+                <a 
+                  href="enquadramentos" 
+                  className="text-white hover:text-emerald-300 transition-colors duration-300 font-medium text-sm uppercase tracking-wider relative group"
+                >
+                  Meus enquadramentos
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-400 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+              </li>
             </ul>
 
             <button className="ml-4 px-4 py-2 bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-md hover:from-emerald-600 hover:to-teal-700 transition-all duration-300 shadow-md hover:shadow-emerald-500/20 text-sm font-medium">

@@ -39,6 +39,13 @@ const HeroSectionText = () => {
     }
   };
 
+  const scrollToSection = () => {
+  const element = document.getElementById("form-completo");
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
   return (
     <div className="relative min-h-screen flex bg-white overflow-hidden mt-2">
       {/* Seção da Imagem (apenas desktop) */}
@@ -83,9 +90,9 @@ const HeroSectionText = () => {
             className="text-3xl xs:text-4xl sm:text-[2.5rem] md:text-5xl lg:text-[3.4rem] font-bold text-gray-900 mb-4 sm:mb-6 leading-tight tracking-tight"
           >
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 to-teal-600">
-              Sustentabilidade
+              Realize o Enquadramento ambiental
             </span>{' '}
-            que impulsiona resultados
+            para o seu Empreendimento!
           </motion.h1>
 
           {/* Descrição */}
@@ -93,7 +100,7 @@ const HeroSectionText = () => {
             variants={itemVariants}
             className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8 leading-relaxed max-w-[38rem] px-2 sm:px-0"
           >
-            Soluções ambientais integradas que reduzem custos operacionais em até 35% enquanto elevam seu ESG score para novos patamares.
+            Descubra em poucos segundos as exigências legais para sua atividade. 
           </motion.p>
 
           {/* Destaque de Benefício */}
@@ -108,9 +115,9 @@ const HeroSectionText = () => {
                 </svg>
               </div>
               <div className="text-left">
-                <h3 className="font-bold text-gray-900 mb-1 text-sm sm:text-base">Métricas Reais</h3>
+                <h3 className="font-bold text-gray-900 mb-1 text-sm sm:text-base">Clique abaixo e faça seu enquadramento agora mesmo.</h3>
                 <p className="text-gray-600 text-xs sm:text-sm md:text-base">
-                  <span className="text-emerald-600 font-semibold">92% dos clientes</span> alcançam selo verde dentro do primeiro ano de implementação.
+                  <span className="text-emerald-600 font-semibold">92% dos clientes</span>alcançam selo verde dentro do primeiro ano de implementação.
                 </p>
               </div>
             </div>
@@ -121,9 +128,9 @@ const HeroSectionText = () => {
             variants={itemVariants}
             className="flex flex-col sm:flex-row gap-2 sm:gap-3 justify-center w-full px-2 sm:px-0"
           >
-            <button className="relative px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden text-sm sm:text-base">
+            <button onClick={scrollToSection} className="relative px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden text-sm sm:text-base">
               <span className="relative z-10 flex items-center justify-center">
-                Iniciar Diagnóstico Ambiental
+                Iniciar Enquadramento Ambiental
                 <svg xmlns="http://www.w3.org/2000/svg" className="ml-2 h-3 w-3 sm:h-4 sm:w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>

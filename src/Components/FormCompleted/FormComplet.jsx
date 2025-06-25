@@ -27,6 +27,7 @@ const FormCompleted = () => {
   };
   return (
     <section
+      id="form-completo"
       ref={formRef}
       className="w-full min-h-screen bg-gray-50 flex items-center justify-center py-20 px-4"
     >

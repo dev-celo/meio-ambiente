@@ -13,6 +13,10 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --background-navbar-color: #3E2723;
+  --background-alternative-rose: hsl(calc(353 - var(--hue)), 89%, 93%);
+  --color-border: hsl(120, 2%, 27%);
 }
 
 a {
@@ -25,7 +29,7 @@ a:hover {
 }
 
 body {
-  background-color: #242424;
+  background-color: var(--background-color);
   margin: 0;
 }
 

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import data from "../../data/ambiente.json";
 import { FaLeaf, FaTasks, FaDollarSign, FaCheck } from "react-icons/fa";
+import LeadCaptureModalForce from "../LeadCaptureModalForce/LeadCaptureModalForce";
+import { useNavigate } from "react-router-dom";
 
 const Form = () => {
   const [selectedDivision, setSelectedDivision] = useState("");
@@ -10,6 +12,9 @@ const Form = () => {
   const [valor, setValor] = useState("");
   const [empreendimento, setEmpreendimento] = useState(null);
   const [error, setError] = useState("");
+  const [formularioEnviado, setFormularioEnviado] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const navigate = useNavigate();
 
   const definirPorte = (valor, porte) => {
     if (valor <= porte.pequeno) return "Pequeno";
@@ -61,6 +66,29 @@ const Form = () => {
     }
   };
 
+  const handleSubmit = (dadosContato) => {
+    if (!empreendimento) {
+      console.error("Empreendimento ainda não foi processado.");
+      return;
+    }
+
+    const dadosCompletos = {
+      ...empreendimento,
+      ...dadosContato,
+      dataHora: new Date().toISOString(),
+    };
+
+    const salvos = JSON.parse(localStorage.getItem("empreendimentos")) || [];
+    salvos.push(dadosCompletos);
+    localStorage.setItem("empreendimentos", JSON.stringify(salvos));
+
+    setFormularioEnviado(true);
+    setShowModal(false);
+    console.log("Empreendimento salvo com dados de contato:", dadosCompletos);
+    navigate("/enquadramentos");
+  };
+
+
   const divisions = data.categorias.map((categoria) => categoria.divisao);
   const selectedDivisionData = data.categorias.find(
     (categoria) => categoria.divisao === selectedDivision
@@ -107,8 +135,9 @@ const Form = () => {
       valor,
       porte: porteDefinido,
       potencialPoluidor,
-    });
+    }, setShowModal(true));
   };
+
 
   return (
     <>
@@ -116,12 +145,12 @@ const Form = () => {
         <div className="flex justify-center mb-4 sm:mb-6">
           <img src="./logo.png" alt="Logo" className="w-40 sm:w-48" />
         </div>
-        
-        <form 
-          className="w-full max-w-md mx-auto" 
-          onSubmit={(e) => { 
-            e.preventDefault(); 
-            processarEmpreendimento(); 
+
+        <form
+          className="w-full max-w-md mx-auto"
+          onSubmit={(e) => {
+            e.preventDefault();
+            processarEmpreendimento();
           }}
         >
           <div className="flex flex-col space-y-3 sm:space-y-4 items-center">
@@ -146,58 +175,54 @@ const Form = () => {
                   ))}
                 </select>
 
-                {selectedDivision && (
-                  <select
-                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full"
-                    value={selectedGroup}
-                    onChange={handleGroupChange}
-                  >
-                    <option value="" disabled>Selecione um grupo</option>
-                    {groups.map((group) => (
-                      <option key={group} value={group}>{group}</option>
-                    ))}
-                  </select>
-                )}
+
+                <select
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full"
+                  value={selectedGroup}
+                  onChange={handleGroupChange}
+                >
+                  <option value="" disabled>Selecione um grupo</option>
+                  {groups.map((group) => (
+                    <option key={group} value={group}>{group}</option>
+                  ))}
+                </select>
               </div>
             </div>
 
             {/* Atividade e Subcategoria */}
-            {selectedGroup && (
-              <div className="w-full mt-2 sm:mt-4">
-                <div className="flex items-center justify-center sm:justify-start space-x-2 mb-2">
-                  <FaTasks className="text-gray-600 text-sm sm:text-base" />
-                  <label className="block text-sm sm:text-base font-medium text-gray-900">
-                    Selecione Atividade e Subcategoria
-                  </label>
-                </div>
 
-                <div className="flex flex-col space-y-3 sm:space-y-4 w-full">
-                  <select
-                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full"
-                    value={selectedActivity}
-                    onChange={handleActivityChange}
-                  >
-                    <option value="" disabled>Selecione uma atividade</option>
-                    {activities.map((activity) => (
-                      <option key={activity} value={activity}>{activity}</option>
-                    ))}
-                  </select>
-
-                  {selectedActivity && subCategories.length > 0 && (
-                    <select
-                      className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full"
-                      value={selectedSubCategory}
-                      onChange={handleSubCategoryChange}
-                    >
-                      <option value="" disabled>Selecione uma subcategoria</option>
-                      {subCategories.map((subCategory) => (
-                        <option key={subCategory} value={subCategory}>{subCategory}</option>
-                      ))}
-                    </select>
-                  )}
-                </div>
+            <div className="w-full mt-2 sm:mt-4">
+              <div className="flex items-center justify-center sm:justify-start space-x-2 mb-2">
+                <FaTasks className="text-gray-600 text-sm sm:text-base" />
+                <label className="block text-sm sm:text-base font-medium text-gray-900">
+                  Selecione Atividade e Subcategoria
+                </label>
               </div>
-            )}
+
+              <div className="flex flex-col space-y-3 sm:space-y-4 w-full">
+                <select
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full"
+                  value={selectedActivity}
+                  onChange={handleActivityChange}
+                >
+                  <option value="" disabled>Selecione uma atividade</option>
+                  {activities.map((activity) => (
+                    <option key={activity} value={activity}>{activity}</option>
+                  ))}
+                </select>
+
+                <select
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full"
+                  value={selectedSubCategory}
+                  onChange={handleSubCategoryChange}
+                >
+                  <option value="" disabled>Selecione uma subcategoria</option>
+                  {subCategories.map((subCategory) => (
+                    <option key={subCategory} value={subCategory}>{subCategory}</option>
+                  ))}
+                </select>
+              </div>
+            </div>
 
             {/* Valor */}
             {selectedSubCategory && (
@@ -219,8 +244,8 @@ const Form = () => {
             )}
 
             {/* Botão Enviar */}
-            <button 
-              type="submit" 
+            <button
+              type="submit"
               className="mt-3 sm:mt-4 w-full bg-gray-700 text-white py-2 sm:py-3 rounded-lg text-sm sm:text-base hover:bg-gray-900 transition duration-300 flex items-center justify-center"
             >
               <FaCheck className="mr-2 text-xs sm:text-sm" />
@@ -230,16 +255,19 @@ const Form = () => {
         </form>
       </div>
 
-      {empreendimento && (
-        <div className="fixed top-16 sm:top-20 left-1/2 transform -translate-x-1/2 bg-green-500 text-white p-2 sm:p-4 rounded-lg shadow-lg flex items-center space-x-2 max-w-[90vw] sm:max-w-md">
-          <FaCheck className="flex-shrink-0 text-xs sm:text-sm" />
-          <p className="text-xs sm:text-sm">
-            {empreendimento.porte === "(Porte desnecessário)"
-              ? `Empreendimento com ${empreendimento.potencialPoluidor} Potencial Poluidor`
-              : `Empreendimento de ${empreendimento.porte} Porte e ${empreendimento.potencialPoluidor} Potencial Poluidor`}
-          </p>
-        </div>
-      )}
+      {
+        showModal &&
+        <LeadCaptureModalForce onSubmit={handleSubmit} />
+      }
+
+      {
+        formularioEnviado && (
+          <div className="p-6">
+            <h2 className="text-xl font-bold text-green-700">Obrigado pelo envio!</h2>
+            <p className="mt-2">Em breve você receberá sua análise completa por e-mail ou WhatsApp.</p>
+          </div>
+        )
+      }
     </>
   );
 };
