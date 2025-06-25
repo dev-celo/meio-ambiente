@@ -65,25 +65,25 @@ const Form = () => {
   };
 
   const handleSubmit = (dadosContato) => {
-  if (!empreendimento) {
-    console.error("Empreendimento ainda não foi processado.");
-    return;
-  }
+    if (!empreendimento) {
+      console.error("Empreendimento ainda não foi processado.");
+      return;
+    }
 
-  const dadosCompletos = {
-    ...empreendimento,
-    ...dadosContato,
-    dataHora: new Date().toISOString(),
+    const dadosCompletos = {
+      ...empreendimento,
+      ...dadosContato,
+      dataHora: new Date().toISOString(),
+    };
+
+    const salvos = JSON.parse(localStorage.getItem("empreendimentos")) || [];
+    salvos.push(dadosCompletos);
+    localStorage.setItem("empreendimentos", JSON.stringify(salvos));
+
+    setFormularioEnviado(true);
+    setShowModal(false);
+    console.log("Empreendimento salvo com dados de contato:", dadosCompletos);
   };
-
-  const salvos = JSON.parse(localStorage.getItem("empreendimentos")) || [];
-  salvos.push(dadosCompletos);
-  localStorage.setItem("empreendimentos", JSON.stringify(salvos));
-
-  setFormularioEnviado(true);
-  setShowModal(false);
-  console.log("Empreendimento salvo com dados de contato:", dadosCompletos);
-};
 
 
   const divisions = data.categorias.map((categoria) => categoria.divisao);
@@ -172,58 +172,54 @@ const Form = () => {
                   ))}
                 </select>
 
-                {selectedDivision && (
-                  <select
-                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full"
-                    value={selectedGroup}
-                    onChange={handleGroupChange}
-                  >
-                    <option value="" disabled>Selecione um grupo</option>
-                    {groups.map((group) => (
-                      <option key={group} value={group}>{group}</option>
-                    ))}
-                  </select>
-                )}
+
+                <select
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full"
+                  value={selectedGroup}
+                  onChange={handleGroupChange}
+                >
+                  <option value="" disabled>Selecione um grupo</option>
+                  {groups.map((group) => (
+                    <option key={group} value={group}>{group}</option>
+                  ))}
+                </select>
               </div>
             </div>
 
             {/* Atividade e Subcategoria */}
-            {selectedGroup && (
-              <div className="w-full mt-2 sm:mt-4">
-                <div className="flex items-center justify-center sm:justify-start space-x-2 mb-2">
-                  <FaTasks className="text-gray-600 text-sm sm:text-base" />
-                  <label className="block text-sm sm:text-base font-medium text-gray-900">
-                    Selecione Atividade e Subcategoria
-                  </label>
-                </div>
 
-                <div className="flex flex-col space-y-3 sm:space-y-4 w-full">
-                  <select
-                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full"
-                    value={selectedActivity}
-                    onChange={handleActivityChange}
-                  >
-                    <option value="" disabled>Selecione uma atividade</option>
-                    {activities.map((activity) => (
-                      <option key={activity} value={activity}>{activity}</option>
-                    ))}
-                  </select>
-
-                  {selectedActivity && subCategories.length > 0 && (
-                    <select
-                      className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full"
-                      value={selectedSubCategory}
-                      onChange={handleSubCategoryChange}
-                    >
-                      <option value="" disabled>Selecione uma subcategoria</option>
-                      {subCategories.map((subCategory) => (
-                        <option key={subCategory} value={subCategory}>{subCategory}</option>
-                      ))}
-                    </select>
-                  )}
-                </div>
+            <div className="w-full mt-2 sm:mt-4">
+              <div className="flex items-center justify-center sm:justify-start space-x-2 mb-2">
+                <FaTasks className="text-gray-600 text-sm sm:text-base" />
+                <label className="block text-sm sm:text-base font-medium text-gray-900">
+                  Selecione Atividade e Subcategoria
+                </label>
               </div>
-            )}
+
+              <div className="flex flex-col space-y-3 sm:space-y-4 w-full">
+                <select
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full"
+                  value={selectedActivity}
+                  onChange={handleActivityChange}
+                >
+                  <option value="" disabled>Selecione uma atividade</option>
+                  {activities.map((activity) => (
+                    <option key={activity} value={activity}>{activity}</option>
+                  ))}
+                </select>
+
+                <select
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full"
+                  value={selectedSubCategory}
+                  onChange={handleSubCategoryChange}
+                >
+                  <option value="" disabled>Selecione uma subcategoria</option>
+                  {subCategories.map((subCategory) => (
+                    <option key={subCategory} value={subCategory}>{subCategory}</option>
+                  ))}
+                </select>
+              </div>
+            </div>
 
             {/* Valor */}
             {selectedSubCategory && (
