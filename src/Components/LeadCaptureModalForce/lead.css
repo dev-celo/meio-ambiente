@@ -1,0 +1,80 @@
+/* lead.css */
+.lead-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lead-modal-container {
+  background: #fff;
+  border-radius: 8px;
+  padding: 32px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.2);
+  animation: fadeIn 0.3s ease-out;
+}
+
+.lead-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.lead-modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.lead-modal-close {
+  font-size: 1.25rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.lead-modal-content {
+  text-align: left;
+}
+
+.lead-input-group {
+  margin-bottom: 16px;
+}
+
+.lead-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.lead-input-error {
+  border-color: red;
+}
+
+.lead-error-message {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 4px;
+}
+
+.lead-submit-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.lead-submit-button:disabled {
+  background-color: #aaa;
+}
