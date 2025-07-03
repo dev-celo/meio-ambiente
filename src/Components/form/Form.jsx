@@ -110,6 +110,7 @@ const Form = () => {
     let porteDefinido = "";
     let unidadeMedida = "";
     let potencialPoluidor = "";
+    let classe = "";
 
     if (selectedActivityData.subcategorias.length > 0) {
       if (!selectedSubCategoryData) {
@@ -126,6 +127,19 @@ const Form = () => {
       potencialPoluidor = selectedActivityData.potencial_poluidor;
     }
 
+    // Regra de classificação
+    const regras = {
+      Pequeno: { Pequeno: 1, Médio: 2, Grande: 3 },
+      Médio: { Pequeno: 2, Médio: 3, Grande: 5 },
+      Alto: { Pequeno: 4, Médio: 5, Grande: 6 },
+    };
+
+    if (regras[potencialPoluidor] && regras[potencialPoluidor][porteDefinido]) {
+      classe = `Classe ${regras[potencialPoluidor][porteDefinido]}`;
+    } else {
+      classe = "Não classificado";
+    }
+
     setEmpreendimento({
       divisao: selectedDivision,
       grupo: selectedGroup,
@@ -135,8 +149,11 @@ const Form = () => {
       valor,
       porte: porteDefinido,
       potencialPoluidor,
+      classe,
+      data: new Date().toLocaleString("pt-BR")
     }, setShowModal(true));
   };
+
 
 
   return (

@@ -23,9 +23,9 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <img 
-              src="/logo_com_o_nome_ambitrade.png" 
-              alt="Ambitrade Logo" 
+            <img
+              src="/logo_com_o_nome_ambitrade.png"
+              alt="Ambitrade Logo"
               className="h-10 md:h-12 w-auto transition-all duration-300 hover:scale-105"
             />
           </div>
@@ -34,8 +34,8 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <ul className="flex space-x-6">
               <li>
-                <a 
-                  href="/" 
+                <a
+                  href="/"
                   className="text-white hover:text-emerald-300 transition-colors duration-300 font-medium text-sm uppercase tracking-wider relative group"
                 >
                   Início
@@ -43,8 +43,8 @@ const Header = () => {
                 </a>
               </li>
               <li>
-                <a 
-                  href="about" 
+                <a
+                  href="about"
                   className="text-white hover:text-emerald-300 transition-colors duration-300 font-medium text-sm uppercase tracking-wider relative group"
                 >
                   Sobre
@@ -52,29 +52,25 @@ const Header = () => {
                 </a>
               </li>
               <li>
-                <a 
-                  href="contact" 
+                <a
+                  href="contact"
                   className="text-white hover:text-emerald-300 transition-colors duration-300 font-medium text-sm uppercase tracking-wider relative group"
                 >
                   Contato
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-400 transition-all duration-300 group-hover:w-full"></span>
                 </a>
               </li>
-
-              <li>
-                <a 
-                  href="enquadramentos" 
-                  className="text-white hover:text-emerald-300 transition-colors duration-300 font-medium text-sm uppercase tracking-wider relative group"
-                >
-                  Meus enquadramentos
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-400 transition-all duration-300 group-hover:w-full"></span>
-                </a>
-              </li>
             </ul>
 
-            <button className="ml-4 px-4 py-2 bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-md hover:from-emerald-600 hover:to-teal-700 transition-all duration-300 shadow-md hover:shadow-emerald-500/20 text-sm font-medium">
-              Login
+            <button className="ml-4 px-6 py-2 border border-gray-400 text-sm font-semibold text-gray-100 tracking-wider uppercase bg-gray-800 hover:bg-gray-700 transition duration-300">
+              <a href="enquadramentos">
+                Meus enquadramentos
+              </a>
             </button>
+
+
+
+
           </nav>
 
           {/* Mobile Menu Button */}
