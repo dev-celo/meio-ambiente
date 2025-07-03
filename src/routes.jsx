@@ -4,10 +4,12 @@ import DynamicSelect from './App';
 import Contact from './Pages/ContactPage/Contact';
 import AboutPage from './Pages/AboutPage/AboutPage';
 import PerfilAmbiental from './Pages/EnquadramentoAmbiental/Enquadramento';
+import ScrollToTop from './Components/ScrollTop/ScrollTop';
 
 function AppRoutes() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<DynamicSelect />} />
         <Route path="/contact" element={<Contact />} />
