@@ -22,13 +22,13 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <a href="/" className="flex-shrink-0">
             <img
               src="/logo_com_o_nome_ambitrade.png"
               alt="Ambitrade Logo"
               className="h-10 md:h-12 w-auto transition-all duration-300 hover:scale-105"
             />
-          </div>
+          </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
