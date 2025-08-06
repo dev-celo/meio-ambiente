@@ -72,7 +72,7 @@ const HeroSectionText = () => {
           {/* Tag de Categoria */}
           <motion.div
             variants={itemVariants}
-            className="inline-flex items-center mb-4 sm:mb-6 px-3 py-1 rounded-full bg-emerald-50/80 backdrop-blur-sm"
+            className="inline-flex items-center mb-4 sm:mb-6 px-3 py-1 rounded-full bg-emerald-50/80 backdrop-blur-sm mt-6"
           >
             <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-white flex items-center justify-center mr-2 shadow-sm">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 sm:h-5 sm:w-5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
