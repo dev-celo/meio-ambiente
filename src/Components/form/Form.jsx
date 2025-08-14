@@ -66,27 +66,46 @@ const Form = () => {
     }
   };
 
-  const handleSubmit = (dadosContato) => {
-    if (!empreendimento) {
-      console.error("Empreendimento ainda não foi processado.");
-      return;
-    }
+  const handleSubmit = async (dadosContato) => {
+  if (!empreendimento) {
+    console.error("Empreendimento ainda não foi processado.");
+    return;
+  }
 
-    const dadosCompletos = {
+  // Combina dados do contato + empreendimento dentro de "enquadramento"
+  const dadosCompletos = {
+    nome: dadosContato.nome,
+    email: dadosContato.email,
+    telefone: dadosContato.telefone,
+    empreendimento: dadosContato.empreendimento || "",
+    enquadramento: {
       ...empreendimento,
-      ...dadosContato,
-      dataHora: new Date().toISOString(),
-    };
-
-    const salvos = JSON.parse(localStorage.getItem("empreendimentos")) || [];
-    salvos.push(dadosCompletos);
-    localStorage.setItem("empreendimentos", JSON.stringify(salvos));
-
-    setFormularioEnviado(true);
-    setShowModal(false);
-    console.log("Empreendimento salvo com dados de contato:", dadosCompletos);
-    navigate("/enquadramentos");
+      dataHora: new Date().toISOString() // garante que dataHora existe
+    }
   };
+
+  
+
+  try {
+    const response = await fetch("https://meio-ambiente-backend.onrender.com/api/formulario", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(dadosCompletos)
+    });
+
+    const result = await response.json();
+
+    if (response.ok) {
+      setFormularioEnviado(true);
+      setShowModal(false);
+      navigate("/enquadramentos");
+    } else {
+      console.error("Erro no envio:", result.error);
+    }
+  } catch (err) {
+    console.error("Erro de rede:", err);
+  }
+};
 
 
   const divisions = data.categorias.map((categoria) => categoria.divisao);
