@@ -47,10 +47,10 @@ const HeroSectionText = () => {
 };
 
   return (
-    <div className="relative min-h-screen flex bg-white overflow-hidden mt-2">
+    <div className="relative min-h-screen flex bg-white overflow-hidden">
       {/* Seção da Imagem (apenas desktop) */}
       <div
-        className="hidden lg:block w-[30rem] h-[calc(100vh-2.5rem)] flex-shrink-0 bg-gray-800 mt-10"
+        className="hidden lg:block w-[30rem] h-[calc(100vh-3rem)] flex-shrink-0 bg-gray-800 mt-30"
         style={{
           backgroundImage: 'url("/hero.png")',
           backgroundSize: 'cover',
@@ -61,7 +61,7 @@ const HeroSectionText = () => {
       {/* Seção do Conteúdo */}
       <div
         ref={ref}
-        className="flex-1 flex items-center justify-center p-6 sm:p-8 lg:p-12 xl:p-16 w-full"
+        className="flex-1 flex items-center justify-center p-2! sm:p-8 lg:p-12 xl:p-16 w-full"
       >
         <motion.div
           initial="hidden"
@@ -72,7 +72,7 @@ const HeroSectionText = () => {
           {/* Tag de Categoria */}
           <motion.div
             variants={itemVariants}
-            className="inline-flex items-center mb-4 sm:mb-6 px-3 py-1 rounded-full bg-emerald-50/80 backdrop-blur-sm mt-6"
+            className="inline-flex items-center mb-4 sm:mb-6 px-3 py-1 rounded-full bg-emerald-50/80 backdrop-blur-sm"
           >
             <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-white flex items-center justify-center mr-2 shadow-sm">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 sm:h-5 sm:w-5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
