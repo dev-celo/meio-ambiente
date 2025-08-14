@@ -84,7 +84,12 @@ const Form = () => {
     }
   };
 
-  
+  // 1️⃣ Salva no localStorage
+  const empreendimentosExistentes = JSON.parse(localStorage.getItem("empreendimentos")) || [];
+  localStorage.setItem(
+    "empreendimentos",
+    JSON.stringify([...empreendimentosExistentes, empreendimento])
+  );
 
   try {
     const response = await fetch("https://meio-ambiente-backend.onrender.com/api/formulario", {
