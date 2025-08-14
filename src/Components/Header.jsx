@@ -52,7 +52,7 @@ const Header = () => {
           ))}
 
           {/* CTA sempre visível */}
-          <a href="/enquadramentos" className="ml-4 px-6 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-lg transition-all duration-300">
+          <a href="/enquadramentos" className="ml-4 px-6 py-2 bg-emerald-600 hover:bg-emerald-700 text-white! font-semibold rounded-lg transition-all duration-300">
             Meus Enquadramentos
           </a>
         </nav>
